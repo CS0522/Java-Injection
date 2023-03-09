@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.2" timestamp="2008-11-29T00:53:00.359">
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\extras\src\main\java\org\apache\struts\plugins\ModuleConfigVerifier.java">
+<violation beginline="95" endline="95" begincolumn="9" endcolumn="9" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.plugins" class="ModuleConfigVerifier" method="destroy" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="168" endline="168" begincolumn="19" endcolumn="26" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.plugins" class="ModuleConfigVerifier" method="verifyActionMappingClass" variable="amcClass" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'amcClass'.
+</violation>
+<violation beginline="221" endline="221" begincolumn="27" endcolumn="31" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.plugins" class="ModuleConfigVerifier" method="verifyMessageResourcesConfigs" variable="clazz" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'clazz'.
+</violation>
+<violation beginline="256" endline="256" begincolumn="27" endcolumn="31" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.plugins" class="ModuleConfigVerifier" method="verifyPlugInConfigs" variable="clazz" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'clazz'.
+</violation>
+</file>
+</pmd>

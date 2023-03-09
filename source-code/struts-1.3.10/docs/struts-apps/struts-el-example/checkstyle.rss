@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Struts Apps - Struts EL Exercise - Checkstyle report</title>
+    <link>http://struts.apache.org/struts-apps/struts-el-example</link>
+    <description>Struts Apps - Struts EL Exercise - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2000 - 2008 Apache Software Foundation</copyright>
+    <item>
+      <title>File: 5,
+             Errors: 111,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html#org.apache.struts.webapp.el.exercise.TestBean.java">org/apache/struts/webapp/el/exercise/TestBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  93
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html#org.apache.struts.webapp.el.exercise.HtmlSettersAction.java">org/apache/struts/webapp/el/exercise/HtmlSettersAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html#org.apache.struts.webapp.el.exercise.DynaSetAction.java">org/apache/struts/webapp/el/exercise/DynaSetAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html#org.apache.struts.webapp.el.exercise.Coord.java">org/apache/struts/webapp/el/exercise/Coord.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-el-example/checkstyle.html#org.apache.struts.webapp.el.exercise.package.html">org/apache/struts/webapp/el/exercise/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

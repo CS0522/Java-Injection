@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 1 - How to Build an Action Form</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 1</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../learning.html">Learning</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../roadmap.html">Roadmap</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../downloads.html">Releases</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../userGuide/index.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faqs/index.html">FAQs and HOWTOs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../userGuide/release-notes.html">Release Notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../dtddoc/index.html">DTDDoc</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://wiki.apache.org/struts/" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="How_to_Build_an_Action_Form"></a>How to Build an Action Form</h2>
+<p>
+                    This is a simple example of a login form to illustrate how
+                    Struts
+                    Action Framework makes dealing with forms much less
+                    painful than using straight HTML
+                    and standard JSP facilities.
+                    Consider the following page (based on the Struts
+                    MailReader example) named
+                    <code>logon.jsp:</code></p>
+<hr />
+<div class="source"><pre>
+&lt;%@ page language=&quot;java&quot; %&gt;
+&lt;%@ taglib  uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
+&lt;%@ taglib uri=&quot;/WEB-INF/struts-bean.tld&quot; prefix=&quot;bean&quot; %&gt;
+
+&lt;html:html&gt;
+&lt;head&gt;
+&lt;title&gt;
+    &lt;bean:message key=&quot;logon.title&quot;/&gt;
+&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor=&quot;white&quot;&gt;
+
+&lt;html:errors/&gt;
+
+&lt;html:form action=&quot;/logon&quot; focus=&quot;username&quot;&gt;
+&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;th class=&quot;right&quot;&gt;
+            &lt;bean:message key=&quot;prompt.username&quot;/&gt;
+        &lt;/th&gt;
+        &lt;td class=&quot;left&quot;&gt;
+            &lt;html:text  property=&quot;username&quot; size=&quot;16&quot;/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th class=&quot;right&quot;&gt;
+            &lt;bean:message key=&quot;prompt.password&quot;/&gt;
+        &lt;/th&gt;
+        &lt;td class=&quot;left&quot;&gt;
+            &lt;html:password property=&quot;password&quot; size=&quot;16&quot;/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;right&quot;&gt;
+            &lt;html:submit&gt;
+                &lt;bean:message key=&quot;button.submit&quot;/&gt;
+            &lt;/html:submit&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;right&quot;&gt;
+            &lt;html:reset&gt;
+                &lt;bean:message key=&quot;button.reset&quot;/&gt;
+            &lt;/html:reset&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/html:form&gt;
+&lt;/body&gt;
+&lt;/html:html&gt;
+</pre>
+</div>
+<hr />
+<p>
+                    The following items illustrate the key features of form
+                    handling,
+                    based on this example:
+                </p>
+<ul><li>
+                        The
+                        <code>taglib</code>
+                        directive tells the JSP page compiler where to
+                        find the
+                        <em>tag library descriptor</em>
+                        for the Struts JSP tags.
+                        In this case, we are using
+                        <code>bean</code>
+                        as the prefix that
+                        identifies tags from the struts-bean library, and
+                        &quot;html&quot; as the prefix
+                        that identifies tags from the struts-html library.
+                        Any desired prefix can be used.
+                    </li>
+<li>
+                        This page uses several occurrences of the
+                        <strong>message</strong>
+                        tag to look up internationalized
+                        message strings from a
+                        <code>MessageResources</code>
+                        object containing
+                        all the resources for this application.
+                        For this page to work, the following message keys must
+                        be defined in
+                        these resources:
+
+                        <ul><li><strong>logon.title</strong>
+                                - Title of the logon page
+                            </li>
+<li><strong>prompt.username</strong>
+                                - A &quot;Username:&quot; prompt string
+                            </li>
+<li><strong>prompt.password</strong>
+                                - A &quot;Password:&quot; prompt string
+                            </li>
+<li><strong>button.submit</strong>
+                                - &quot;Submit&quot; for the button label
+                            </li>
+<li><strong>button.reset</strong>
+                                - &quot;Reset&quot; for the button label
+                            </li>
+</ul>
+
+
+                        When the user logs on, the application can store a
+                        <code>Locale</code>
+                        object in the user's session.
+                        This
+                        <code>Locale</code>
+                        will be used to select messages in the
+                        appropriate language.
+                        This makes it easy to implement giving the user an
+                        option to switch
+                        languages -- simply change the stored
+                        <code>Locale</code>
+                        object, and
+                        all messages are switched automatically.
+                    </li>
+<li>
+                        The
+                        <strong>errors</strong>
+                        tag displays any error messages that have been
+                        stored by a business logic component, or nothing if no
+                        errors have been
+                        stored.
+                        This tag will be described further below.
+                    </li>
+<li>
+                        The
+                        <strong>form</strong>
+                        tag renders an HTML
+                        <code>&lt;form&gt;</code>
+                        element,
+                        based on the specified attributes.
+                        It also associates all of the fields within this form
+                        with a
+                        <code>ActionForm</code>
+                        bean
+                        <code>[org.apache.struts.action.ActionForm].</code>
+                        The tag looks up the
+                        <code>/logon</code>
+                        action mapping in the Struts
+                        configuration.
+                        The
+                        <code>logon</code>
+                        mapping tells the tag that the form bean is
+                        stored in the session context under the key
+                        <code>logonForm.</code>
+                        The developer provides the Java implementation of the
+                        ActionForm bean, subclassing the Struts class
+                        <code>ActionForm</code>
+                        (see
+                        <a href="../userGuide/building_controller.html#4_3_ActionForm_Classes">
+                            Building
+                            Controller</a>
+                        components).
+                        This bean is used to provide initial values for all of
+                        the input
+                        fields that have names matching the property names of
+                        the bean.
+                        If an appropriate bean is not found, a new one will be
+                        created
+                        automatically, using the Java class name specified
+                        through the
+                        action mapping.
+                    </li>
+<li>
+                        The form bean can also be specified in the tag by
+                        providing
+                        <code>name</code>
+                        and
+                        <code>type</code>
+                        attributes. But most often,
+                        everything is specified in the
+                        <a href="../userGuide/building_controller.html#4_8_Writing_Action_Mappings">
+                            Struts Configuration
+                            File.</a></li>
+<li>
+                        The
+                        <strong>text</strong>
+                        tag renders an HTML
+                        <code>&lt;input&gt;</code>
+                        element of type &quot;text&quot;.
+                        In this case, the number of character positions to
+                        occupy on the
+                        browser's screen has been specified as well.
+                        When this page is executed, the current value of the
+                        <code>username</code>
+                        property of the corresponding bean (that is,
+                        the value returned by
+                        <code>getUsername</code>
+                        ).
+                    </li>
+<li>
+                        The
+                        <strong>password</strong>
+                        tag is used similarly.
+                        The difference is that the browser will echo asterisk
+                        characters,
+                        instead of the input value, as the user types their
+                        password.
+                    </li>
+<li>
+                        The
+                        <strong>submit</strong>
+                        and
+                        <strong>reset</strong>
+                        tags generate the corresponding
+                        buttons at the bottom of the form.
+                        The text labels for each button are created using
+                        message tags,
+                        as with the prompts, so that these values are
+                        internationalized.
+                    </li>
+</ul>
+<div class="section"><h3><a name="Transferring_Data"></a>Transferring Data</h3>
+<p>
+                    To transfer data between ActionForms and business objects,
+                    many developers use the Commons BeanUtil methods.
+                    To transfer data from an ActionForm to a business object,
+                    you can use a statement like:
+                </p>
+<div class="source"><pre>
+            PropertyUtils.copyProperties(actionForm, businessObject);
+
+</pre>
+</div>
+<p>
+                    To transfer data from a business object to an ActionForm,
+                    you can reverse the parameters
+
+
+                    <div class="source"><pre>
+            PropertyUtils.copyProperties(businessObject, actionForm);
+</pre>
+</div>
+</p>
+<p>
+                    For more about using this technique, see the
+                    <a href="http://commons.apache.org/beanutils/" class="externalLink">
+                        Commons BeanUtils documentation,</a>
+                    and the Struts MailReader example application.
+                </p>
+<p>
+                    Aside from BeanUtils,
+                    there are other tools available that make it easier to use
+                    business objects
+                    and ActionForms together.
+                    For more about POJO ActionForms, see the
+                    <a href="https://formdef.dev.java.net/" class="externalLink">FormDef</a>
+                    extension
+                    and the
+                    <a href="https://strutslive.dev.java.net/" class="externalLink">Struts Live</a>
+                    toolkit.
+                </p>
+</div>
+<div class="section"><h3><a name="Multipart_Forms"></a>Multipart Forms</h3>
+<p>
+                    Handling multipart forms is also easy.
+                    Obviously when you create a multipart form you're creating
+                    a form that
+                    has at least one input of type &quot;file&quot;.
+                    The first step to creating a multipart form is to utilize
+                    the struts-html
+                    taglib to create the presentation page:
+                </p>
+<div class="source"><pre>
+&lt;%@page language=&quot;java&quot;&gt;
+&lt;%@taglib
+    uri=&quot;/WEB-INF/struts-html.tld&quot;
+   prefix=&quot;html&quot;&gt;
+
+&lt;html:form action=&quot;uploadAction.do&quot; enctype=&quot;multipart/form-data&quot;&gt;
+
+    Please Input Text: &lt;html:text property=&quot;myText&quot;&gt;
+    Please Input The File You Wish to Upload: &lt;html:file property=&quot;myFile&quot;&gt;
+
+   &lt;html:submit /&gt;
+
+&lt;/html:form&gt;
+</pre>
+</div>
+<hr />
+<p>
+                    The next step is to create your ActionForm bean:
+                </p>
+<hr />
+<div class="source"><pre>
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.upload.FormFile;
+
+public class UploadForm extends ActionForm {
+
+    protected String myText;
+    protected FormFile myFile;
+
+    public void setMyText(String text) {
+        myText = text;
+    }
+
+    public String getMyText() {
+        return myText;
+    }
+
+    public void setMyFile(FormFile file) {
+        myFile = file;
+    }
+
+    public FormFile getMyFile() {
+        return myFile;
+    }
+
+}
+</pre>
+</div>
+<hr />
+<p>
+                    Look at the Javadocs for
+                    <code><a href="../apidocs/org/apache/struts/upload/FormFile.html">
+                            FormFile</a></code>
+                    to see the methods it exposes to manipulate files in
+                    file uploading.
+                    Also look at the Javadocs for
+                    <a href="../apidocs/org/apache/struts/action/ActionServlet.html">
+                        ActionServlet</a>
+                    and
+                    <a href="../apidocs/org/apache/struts/action/ActionMapping.html">
+                        ActionMapping</a>
+                    for the various parameters you can specify to change
+                    how files are uploaded.
+                    Basically in your
+                    <code>execute</code>
+                    method in your action class you
+                    would call
+                    <code>((UploadForm) form).getMyFile()</code>
+                    to retrieve the
+                    FormFile and do what you want with it.
+                </p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

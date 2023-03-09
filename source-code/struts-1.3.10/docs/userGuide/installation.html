@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 1 - Installation</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 1</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../learning.html">Learning</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../roadmap.html">Roadmap</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../downloads.html">Releases</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../userGuide/index.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faqs/index.html">FAQs and HOWTOs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../userGuide/release-notes.html">Release Notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../dtddoc/index.html">DTDDoc</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://wiki.apache.org/struts/" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="a6.2_Installation"></a>6.2 Installation</h2>
+<blockquote><em><p>
+            &quot;Would you tell me, please, which way I ought to go from here?&quot;
+            </p>
+<p>
+            &quot;That depends a good deal on where you want to get to.&quot;
+            </p>
+<p>
+            &quot;I don't much care where&quot;
+            </p>
+<p>
+            &quot;Then it doesn't much matter which way you go.&quot;
+            </p>
+<p>
+            &quot;so long as I get somewhere.&quot;
+            </p>
+<p>
+            &quot;Oh, you're sure to do that, if only you walk long enough.&quot;
+            </p>
+</em></blockquote><div class="section"><h3><a name="Prerequisite_Software"></a>Prerequisite Software</h3>
+<p>The framework's binary distribution needs three other
+                    software packages installed to
+                    operate. You may already have these installed on your
+                    system. To build the framework from
+                    source you may need to acquire and install several others.
+                    The complete list is as
+                    follows:</p>
+<ul><li><strong>Java Development Kit</strong>
+                        - You
+                        <strong>must</strong>
+                        download and install
+                        a Java Development Kit (version 1.4 or later) 
+                        implementation for
+                        your operating system platform.
+                        A good starting point for locating Java Development
+                        Kit distributions is
+                        <a href="http://java.sun.com/j2se" class="externalLink">
+                            http://java.sun.com/j2se.</a>
+                        To build the framework, Java 1.4.2 (the latest
+                        production JDK) is suggested and
+                        required if you use our Maven build system.
+                    </li>
+<li><strong>Servlet Container</strong>
+                        - You
+                        <strong>must</strong>
+                        download and install a
+                        servlet container that is compatible with the Servlet
+                        API Specification,
+                        version 2.3 or later, and the JavaServer Pages (JSP)
+                        Specification,
+                        version 1.2 or later. One popular choice is to
+                        download Apache's
+                        <a href="http://jakarta.apache.org/tomcat/" class="externalLink">Tomcat</a>
+                        , but any compliant
+                        container should work well with the framework.
+                    </li>
+<li><strong>Maven Build System</strong>
+                        - (optional) If you are building the framework from the
+                        source distribution, you must download and install the
+                        <a href="http://maven.apache.org/" class="externalLink">Apache
+                            Maven 2</a>
+                        build system (2.0.4 or later).
+                    </li>
+</ul>
+</div>
+<div class="section"><h3><a name="Install_a_Library_Distribution"></a>Install a Library Distribution</h3>
+<p>First, download a binary distribution of Struts
+                    by following the
+                    instructions
+                    <a href="http://struts.apache.org/downloads.html" class="externalLink">here,</a>
+                    Then, make sure
+                    you have downloaded and installed the
+                    <a href="#Prerequisites">prerequisite</a>
+                    software packages described
+                    above.
+                </p>
+<p>Unpack the Library distribution into a convenient
+                    directory.
+                    (If you are <a href="http://struts.apache.org/downloads.html#Building" class="externalLink">
+                    building from the source distribution,</a>
+                    the result of the build will already be an unpacked binary
+                    distribution
+                    for you). The distribution consists of the following
+                    contents:
+                </p>
+<ul><li><strong>lib/*.jar</strong>
+                        - The struts-*.jars contains Java classes
+                        distributed by Apache Struts. The other JAR files
+                        contain packages
+                        from other projects that are imported by the 
+                        framework. When you launch
+                        a your application, these JARs need to be available to
+                        your
+                        application, usually by copying them to the
+                        application's
+                        <code>WEB-INF/lib</code>
+                        directory.
+                        <br />
+<em>WARNING</em>
+                        - If you are going to be hosting multiple
+                        applications on the same servlet container, you will
+                        be tempted
+                        to place the
+                        <code>struts-core.jar</code>
+                        file into the shared repository
+                        supported by your container. Be advised that this may
+                        cause
+                        ClassNotFoundException problems unless
+                        <em>all</em>
+                        of
+                        your application classes are stored in the shared
+                        repository.
+                    </li>
+</ul>
+<p>To use Struts Library in your own application, you
+                    will need to follow
+                    these steps:</p>
+<ul><li>Copy the
+                        <code>lib/*.jar</code>
+                        files from the
+                        Library distribution into the
+                        <code>WEB-INF/lib</code>
+                        directory of your
+                        web application.
+                    </li>
+<li>Modify the
+                        <code>WEB-INF/web.xml</code>
+                        file for your web application
+                        to include a
+                        <code>&lt;servlet&gt;</code>
+                        element to define the
+                        controller servlet, and a
+                        <code>&lt;servlet-mapping&gt;</code>
+                        element
+                        to establish which request URIs are mapped to this
+                        servlet. Use the
+                        <code>WEB-INF/web.xml</code>
+                        file from the Struts Mailreader application
+                        for a detailed example of the required syntax.
+                    </li>
+<li>Create a file
+                        <code>WEB-INF/struts-config.xml</code>
+                        that defines the
+                        action mappings and other characteristics of your
+                        specific application.
+                        You can use the
+                        <code>struts-config.xml</code>
+                        file from the Struts
+                        Blank application for examples of the required syntax.
+                    </li>
+<li>At the top of each JSP page that will use JSP tags,
+                        add line(s) declaring the JSP tag libraries used on
+                        this particular page, like this:</li>
+</ul>
+<pre>
+                    &lt;%@ taglib uri=&quot;http://struts.apache.org/tags-bean&quot; prefix=&quot;bean&quot; %&gt;
+                    &lt;%@ taglib uri=&quot;http://struts.apache.org/tags-html&quot; prefix=&quot;html&quot; %&gt;
+                    &lt;%@ taglib uri=&quot;http://struts.apache.org/tags-logic&quot; prefix=&quot;logic&quot; %&gt;
+                </pre><ul><li>When compiling the Java classes that comprise your
+                        application, be sure
+                        to include the JAR files (copied earlier) on the
+                        CLASSPATH that is submitted to the compiler.</li>
+</ul>
+</div>
+<div class="section"><h3><a name="Installing_The_Framework_With_Your_Servlet_Container"></a>Installing The Framework With Your Servlet Container</h3>
+<p>For most containers, you need only to:</p>
+<ul><li>Copy the WAR files in your 
+                        <code>/webapps</code>
+                        directory to your
+                        containers
+                        <code>webapps</code>
+                        directory.
+                    </li>
+<li>In some cases, you may need to restart your container
+                        if it is running.</li>
+</ul>
+<h4>Running Applications Under A Security Manager</h4>
+<p>Many application servers execute web applications under the
+                    control of a
+                    Java security manager, with restricted permissions on what
+                    classes in the web
+                    application can do. If you utilize form beans with mapped
+                    properties, you may
+                    encounter security exceptions unless you add the following
+                    permission to the
+                    set of permissions granted to your application's
+                    codebase:</p>
+<pre>
+                    permission java.lang.RuntimePermission
+                    &quot;accessDeclaredMembers&quot;;
+                </pre><p>Consult the documentation on your application server for
+                    more information
+                    about how to configure additional security manager
+                    permissions.</p>
+<h4>Installing on Various Containers</h4>
+<ul><li>Bluestone Universal Business Server 7.2 -
+                        <a href="installation-ubs72.html">Additional
+                            steps required.</a></li>
+<li>Borland Application Server 4.5 -No additional
+                        steps required.</li>
+<li>iPlanet Application Server - Service Pack 2 is
+                        recommended. Note that the database
+                        object in the Struts MailReader application is not
+                        compatible with this container.</li>
+<li>iPlanet Web Server -
+                        <a href="installation-ip.html">Additional steps
+                            required.</a></li>
+<li>iPortal Application Server -
+                        <a href="installation-ipas.html">Additional steps
+                            required.</a></li>
+<li>Jetty -
+                        <a href="installation-jetty.html">Additional steps
+                            required.</a></li>
+<li>JRun -
+                        <a href="installation-jr30.html">Additional steps
+                            required.</a></li>
+<li>Novell ExteNd Application Server 4.0+ -
+                        <a href="installation-novell.html">Additional steps
+                            required.</a></li>
+<li>Orion Application Server -
+                        <a href="installation-oas.html">Additional steps
+                            required.</a></li>
+<li>Resin 1.2+ &quot;standalone&quot; - No additional steps
+                        required.</li>
+<li>RexIP - No additional steps required.</li>
+<li>SilverStream 3.7.1 and later -
+                        <a href="installation-sas.html">Additional steps
+                            required.</a></li>
+<li>Tomcat 3.1 and prior - Not recommended. Use Tomcat
+                        3.2.1 or later.</li>
+<li>Tomcat 3.2.1 with Apache -
+                        <a href="installation-tc.html">Additional steps
+                            required.</a></li>
+<li>Tomcat 3.2.1+ &quot;standalone&quot; - No additional steps
+                        required.</li>
+<li>Tomcat 4.0 - No additional steps required.</li>
+<li>Trifork Enterprise Application Server 3.3.x - No
+                        additional steps required.</li>
+<li>Weblogic 5.1 sp8 -
+                        <a href="installation-wls5.html">Additional steps
+                            required.</a></li>
+<li>WebLogic 6.0+ - No additional steps required.</li>
+<li>WebSphere -
+                        <a href="installation-was352.html">Additional steps
+                            required.</a></li>
+<li>WebSphere -
+                        <a href="installation-was352-x.html">Steps for the
+                            Example Application.</a></li>
+</ul>
+</div>
+<div class="section"><h3><a></a></h3>
+<p>
+                    Next:
+                    <a href="../faqs/index.html">FAQs and HowTos</a></p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

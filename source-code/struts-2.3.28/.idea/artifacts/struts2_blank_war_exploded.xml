@@ -1,0 +1,42 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="struts2-blank:war exploded">
+    <output-path>$PROJECT_DIR$/src/apps/blank/target/struts2-blank</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>struts2-blank</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="struts2-blank" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.3" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.3" />
+          <element id="archive" name="struts2-core-2.3.28.jar">
+            <element id="module-output" name="struts2-core" />
+          </element>
+          <element id="archive" name="xwork-core-2.3.28.jar">
+            <element id="module-output" name="xwork-core" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.2" />
+          <element id="library" level="project" name="Maven: asm:asm:3.3" />
+          <element id="library" level="project" name="Maven: asm:asm-commons:3.3" />
+          <element id="library" level="project" name="Maven: asm:asm-tree:3.3" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.22" />
+          <element id="library" level="project" name="Maven: ognl:ognl:3.0.13" />
+          <element id="library" level="project" name="Maven: javassist:javassist:3.11.0.GA" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.1" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/apps/blank/target/struts2-blank/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="struts2-blank/web/Web" />
+    </root>
+  </artifact>
+</component>

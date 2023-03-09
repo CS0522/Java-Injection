@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 1 - The Struts Framework Project - Installation - iPlanet</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 1</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../learning.html">Learning</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../roadmap.html">Roadmap</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../downloads.html">Releases</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../userGuide/index.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faqs/index.html">FAQs and HOWTOs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../userGuide/release-notes.html">Release Notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../dtddoc/index.html">DTDDoc</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://wiki.apache.org/struts/" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="a6.2_Installation"></a>6.2 Installation</h2>
+<div class="section"><h3><a name="Installing_Struts_with_your_servlet_container"></a>Installing Struts with your servlet container</h3>
+<h4>iPlanet Application Server 6.0</h4>
+<p>Service Pack 2 is recommended.</p>
+<p>NOTE: At present, the Struts example application still uses
+                    a non-Serializable
+                    servlet context attribute, and will not run in an
+                    environment that requires them,
+                    like iPlanet Application Server.</p>
+<h4>iPlanet Web Server 4.2</h4>
+<p>Here are the issues I ran into while moving my struts based
+                    application from
+                    Tomcat (supports WebApps and WAR) to iWS 4.1 (does
+                    <strong>NOT</strong>
+                    support Webapps
+                    and WAR).
+                </p>
+<p>Webapps and WAR will be supported in iWS 5.0, as mentioned
+                    in iWS5.0 roadmap.</p>
+<h4>Classpath issues.</h4>
+<p>This s pretty straightforward. Since there is no notion of
+                    <code>WEB-INF/lib</code>
+                    and
+                    <code>WEB-INF/classes</code>
+                    the classpath has to be explicitly set in
+                    <code>$SERVER_ROOT/config/jvm12.conf</code>
+                    .
+                </p>
+<h4>Context relative paths</h4>
+<p>All URLs should be visible from the document root. In my
+                    case I just created
+                    a symbolic link from
+                    <code>$DOCROOT/myapp</code>
+                    to
+                    <code>webapps/myapp</code>
+                    .
+                </p>
+<h4>Extension mapping</h4>
+<p>The config file
+                    <code>$SERVER_ROOT/config/rules.properties</code>
+                    has a similar mechanism
+                    as in web.xml.
+                </p>
+<p>I have this in my
+                    <code>rules.properties</code>
+                    which forwards all urls ending with &quot;do&quot;
+                    to the servlet whose logical name is action.
+                </p>
+<pre>####
+                    @.*[.]do$=action
+                    ####</pre><hr />
+<p>Back to
+                    <a href="installation.html#Containers">Installation</a></p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

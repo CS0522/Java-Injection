@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Struts Apps - Mailreader - Checkstyle report</title>
+    <link>http://struts.apache.org/struts-apps/struts-mailreader</link>
+    <description>Struts Apps - Mailreader - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2000 - 2008 Apache Software Foundation</copyright>
+    <item>
+      <title>File: 13,
+             Errors: 55,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.package.html">org/apache/struts/apps/mailreader/actions/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.LocaleAction.java">org/apache/struts/apps/mailreader/actions/LocaleAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.package.html">org/apache/struts/apps/mailreader/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.Constants.java">org/apache/struts/apps/mailreader/Constants.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.MainMenuAction.java">org/apache/struts/apps/mailreader/actions/MainMenuAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.SubscriptionAction.java">org/apache/struts/apps/mailreader/actions/SubscriptionAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.LogoffAction.java">org/apache/struts/apps/mailreader/actions/LogoffAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.plugin.package.html">org/apache/struts/apps/mailreader/plugin/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.LogonAction.java">org/apache/struts/apps/mailreader/actions/LogonAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.RegistrationAction.java">org/apache/struts/apps/mailreader/actions/RegistrationAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.WelcomeAction.java">org/apache/struts/apps/mailreader/actions/WelcomeAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.plugin.MemoryDatabasePlugIn.java">org/apache/struts/apps/mailreader/plugin/MemoryDatabasePlugIn.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-mailreader/checkstyle.html#org.apache.struts.apps.mailreader.actions.BaseAction.java">org/apache/struts/apps/mailreader/actions/BaseAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

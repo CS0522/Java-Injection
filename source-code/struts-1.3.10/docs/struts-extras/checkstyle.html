@@ -1,0 +1,971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts Extras - Checkstyle Results</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts Extras</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+          </ul>
+              <h5>FAQs and HOWTOs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="dispatchValidator.html">Dispatching And Validating</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Quick Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../index.html">Struts 1</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+              <strong>Checkstyle</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="cpd.html">CPD Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDocs</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="pmd.html">PMD Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="xref/index.html">Source Xref</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="surefire-report.html">Surefire Report</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Checkstyle Results</h2>
+<p>The following document contains the results of <a href="http://checkstyle.sourceforge.net/" class="externalLink">Checkstyle</a>.&#160;<a href="#checkstyle.rss"><img alt="rss feed" src="images/rss.png" /></a></p>
+</div>
+<div class="section"><h2>Summary</h2>
+<table class="bodyTable"><tr class="a"><th>Files</th>
+<th>Infos&#160;<img alt="Infos" src="images/icon_info_sml.gif" /></th>
+<th>Warnings&#160;<img alt="Warnings" src="images/icon_warning_sml.gif" /></th>
+<th>Errors&#160;<img alt="Errors" src="images/icon_error_sml.gif" /></th>
+</tr>
+<tr class="b"><td>19</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+</tr>
+</table>
+</div>
+<div class="section"><h2>Files</h2>
+<table class="bodyTable"><tr class="a"><th>Files</th>
+<th>I&#160;<img alt="Infos" src="images/icon_info_sml.gif" /></th>
+<th>W&#160;<img alt="Warnings" src="images/icon_warning_sml.gif" /></th>
+<th>E&#160;<img alt="Errors" src="images/icon_error_sml.gif" /></th>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.actions.ActionDispatcher.java">org/apache/struts/actions/ActionDispatcher.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.actions.BaseAction.java">org/apache/struts/actions/BaseAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.actions.DispatchAction.java">org/apache/struts/actions/DispatchAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.actions.DownloadAction.java">org/apache/struts/actions/DownloadAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.actions.EventActionDispatcher.java">org/apache/struts/actions/EventActionDispatcher.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.actions.EventDispatchAction.java">org/apache/struts/actions/EventDispatchAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.actions.ForwardAction.java">org/apache/struts/actions/ForwardAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.actions.IncludeAction.java">org/apache/struts/actions/IncludeAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.actions.LocaleAction.java">org/apache/struts/actions/LocaleAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.actions.LookupDispatchAction.java">org/apache/struts/actions/LookupDispatchAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.actions.MappingDispatchAction.java">org/apache/struts/actions/MappingDispatchAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.actions.SwitchAction.java">org/apache/struts/actions/SwitchAction.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.plugins.DigestingPlugIn.java">org/apache/struts/plugins/DigestingPlugIn.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>23</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.plugins.ModuleConfigVerifier.java">org/apache/struts/plugins/ModuleConfigVerifier.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.plugins.package.html">org/apache/struts/plugins/package.html</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.validator.DynaValidatorActionForm.java">org/apache/struts/validator/DynaValidatorActionForm.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts.validator.ValidatorActionForm.java">org/apache/struts/validator/ValidatorActionForm.java</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts.validator.package.html">org/apache/struts/validator/package.html</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+</div>
+<div class="section"><h2>Rules</h2>
+<table class="bodyTable"><tr class="b"><th>Rules</th>
+<th>Violations</th>
+<th>Severity</th>
+</tr>
+<tr class="a"><td>PackageHtml</td>
+<td>2</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>NewlineAtEndOfFile</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>Translation</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>JavadocMethod<ul><li><b>allowUndeclaredRTE</b>: <tt>&quot;true&quot;</tt></li>
+</ul>
+</td>
+<td>17</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>JavadocType</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>JavadocVariable</td>
+<td>12</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>JavadocStyle</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>ConstantName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>LocalFinalVariableName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>LocalVariableName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>MemberName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>MethodName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>PackageName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>ParameterName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>StaticVariableName</td>
+<td>1</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>TypeName</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>RegexpHeader<ul><li><b>header</b><br />
+<span style="color: gray">1:</span>&#160;<tt>/\*\s*</tt><br />
+<span style="color: gray">2:</span>&#160;<tt> \*\s*\$Id.*\$</tt><br />
+<span style="color: gray">3:</span>&#160;<tt> \*\s*</tt><br />
+<span style="color: gray">4:</span>&#160;<tt> \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.</tt><br />
+<span style="color: gray">5:</span>&#160;<tt> \*\s*</tt><br />
+<span style="color: gray">6:</span>&#160;<tt> \*\s*Licensed under the Apache License, Version 2\.0 \(the .License.\);</tt><br />
+<span style="color: gray">7:</span>&#160;<tt> \*\s*you may not use this file except in compliance with the License\.</tt><br />
+<span style="color: gray">8:</span>&#160;<tt> \*\s*You may obtain a copy of the License at</tt><br />
+<span style="color: gray">9:</span>&#160;<tt> \*\s*</tt><br />
+<span style="color: gray">10:</span>&#160;<tt> \*\s*http://www\.apache\.org/licenses/LICENSE\-2\.0</tt><br />
+<span style="color: gray">11:</span>&#160;<tt> \*\s*</tt><br />
+<span style="color: gray">12:</span>&#160;<tt> \*\s*Unless required by applicable law or agreed to in writing, software</tt><br />
+<span style="color: gray">13:</span>&#160;<tt> \*\s*distributed under the License is distributed on an .AS IS. BASIS,</tt><br />
+<span style="color: gray">14:</span>&#160;<tt> \*\s*WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied\.</tt><br />
+<span style="color: gray">15:</span>&#160;<tt> \*\s*See the License for the specific language governing permissions and</tt><br />
+<span style="color: gray">16:</span>&#160;<tt> \*\s*limitations under the License\.</tt><br />
+<span style="color: gray">17:</span>&#160;<tt> \*/\s*</tt></li>
+</ul>
+</td>
+<td>16</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>AvoidStarImport</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>IllegalImport</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>RedundantImport</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>UnusedImports</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>FileLength</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>LineLength<ul><li><b>max</b>: <tt>&quot;120&quot;</tt></li>
+<li><b>ignorePattern</b>: <tt>&quot;^ \* @version .*$&quot;</tt></li>
+</ul>
+</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>MethodLength</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>ParameterNumber</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>EmptyForIteratorPad</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>NoWhitespaceAfter<ul><li><b>tokens</b>: <tt>&quot;BNOT, DEC, DOT, INC, LNOT, UNARY_MINUS, UNARY_PLUS&quot;</tt></li>
+</ul>
+</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>NoWhitespaceBefore</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>OperatorWrap</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>ParenPad</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>TypecastParenPad</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>TabCharacter</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>WhitespaceAfter</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>WhitespaceAround</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>ModifierOrder</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>RedundantModifier</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>AvoidNestedBlocks</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>EmptyBlock</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>LeftCurly</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>NeedBraces</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>RightCurly</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>DoubleCheckedLocking</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>EmptyStatement</td>
+<td>1</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>EqualsHashCode</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>IllegalInstantiation</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>InnerAssignment</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>MagicNumber</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>MissingSwitchDefault</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>RedundantThrows</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>SimplifyBooleanExpression</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>SimplifyBooleanReturn</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>FinalClass</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>HideUtilityClassConstructor</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>InterfaceIsType</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>VisibilityModifier<ul><li><b>protectedAllowed</b>: <tt>&quot;true&quot;</tt></li>
+</ul>
+</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>ArrayTypeStyle</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>GenericIllegalRegexp<ul><li><b>message</b>: <tt>&quot;Line has trailing spaces.&quot;</tt></li>
+<li><b>format</b>: <tt>&quot;\s+$&quot;</tt></li>
+</ul>
+</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="b"><td>TodoComment</td>
+<td>1</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+<tr class="a"><td>UpperEll</td>
+<td>0</td>
+<td><img alt="Errors" src="images/icon_error_sml.gif" />&#160;Error</td>
+</tr>
+</table>
+</div>
+<div class="section"><h2>Details</h2>
+<div class="section"><h3><a name="org.apache.struts.actions.ActionDispatcher.java"></a>org/apache/struts/actions/ActionDispatcher.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/ActionDispatcher.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.BaseAction.java"></a>org/apache/struts/actions/BaseAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/BaseAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.DispatchAction.java"></a>org/apache/struts/actions/DispatchAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/DispatchAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.DownloadAction.java"></a>org/apache/struts/actions/DownloadAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/DownloadAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.EventActionDispatcher.java"></a>org/apache/struts/actions/EventActionDispatcher.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/EventActionDispatcher.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.EventDispatchAction.java"></a>org/apache/struts/actions/EventDispatchAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/EventDispatchAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.ForwardAction.java"></a>org/apache/struts/actions/ForwardAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/ForwardAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.IncludeAction.java"></a>org/apache/struts/actions/IncludeAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/IncludeAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.LocaleAction.java"></a>org/apache/struts/actions/LocaleAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/LocaleAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.LookupDispatchAction.java"></a>org/apache/struts/actions/LookupDispatchAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/LookupDispatchAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.MappingDispatchAction.java"></a>org/apache/struts/actions/MappingDispatchAction.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/MappingDispatchAction.html#4">4</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'Exception'.</td>
+<td><a href="./xref/org/apache/struts/actions/MappingDispatchAction.html#206">206</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.actions.SwitchAction.java"></a>org/apache/struts/actions/SwitchAction.java</h3>
+<table class="bodyTable"><tr class="a"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/actions/SwitchAction.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.plugins.DigestingPlugIn.java"></a>org/apache/struts/plugins/DigestingPlugIn.java</h3>
+<table class="bodyTable"><tr class="a"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#4">4</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#56">56</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#57">57</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#58">58</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#59">59</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#60">60</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#61">61</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#62">62</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#63">63</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#64">64</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#65">65</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#66">66</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#67">67</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'ServletException'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#149">149</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'IOException'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#199">199</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'ServletException'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#219">219</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'IOException'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#283">283</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'IOException'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#321">321</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @throws tag for 'IOException'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#334">334</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @param tag for 'ruleSets'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#414">414</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @param tag for 'digesterPath'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#432">432</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @param tag for 'digesterSource'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#452">452</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected @param tag for 'push'.</td>
+<td><a href="./xref/org/apache/struts/plugins/DigestingPlugIn.html#472">472</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.plugins.ModuleConfigVerifier.java"></a>org/apache/struts/plugins/ModuleConfigVerifier.java</h3>
+<table class="bodyTable"><tr class="a"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#4">4</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Name 'LOG' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#52">52</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected an @return tag.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#76">76</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Empty statement.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#95">95</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing a Javadoc comment.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#99">99</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Comment matches to-do format 'TODO:'.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#109">109</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected an @return tag.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#158">158</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected an @return tag.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#184">184</a></td>
+</tr>
+<tr class="b"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected an @return tag.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#209">209</a></td>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Expected an @return tag.</td>
+<td><a href="./xref/org/apache/struts/plugins/ModuleConfigVerifier.html#244">244</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.plugins.package.html"></a>org/apache/struts/plugins/package.html</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing package documentation file.</td>
+<td><a href="./xref/org/apache/struts/plugins/package.html#0">0</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.validator.DynaValidatorActionForm.java"></a>org/apache/struts/validator/DynaValidatorActionForm.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/validator/DynaValidatorActionForm.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.validator.ValidatorActionForm.java"></a>org/apache/struts/validator/ValidatorActionForm.java</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Line does not match expected header line of ' \*\s*Copyright \d{4}(-\d{4}|,\d{4})* The Apache Software Foundation\.'.</td>
+<td><a href="./xref/org/apache/struts/validator/ValidatorActionForm.html#4">4</a></td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts.validator.package.html"></a>org/apache/struts/validator/package.html</h3>
+<table class="bodyTable"><tr class="b"><th>Violation</th>
+<th>Message</th>
+<th>Line</th>
+</tr>
+<tr class="a"><td><img alt="Errors" src="images/icon_error_sml.gif" /></td>
+<td>Missing package documentation file.</td>
+<td><a href="./xref/org/apache/struts/validator/package.html#0">0</a></td>
+</tr>
+</table>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

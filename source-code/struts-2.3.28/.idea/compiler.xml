@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="struts2-convention-plugin" />
+        <module name="xwork-core" />
+        <module name="struts2-rest-plugin" />
+        <module name="struts2-dojo-plugin" />
+        <module name="struts2-showcase" />
+        <module name="struts2-tiles3-plugin" />
+        <module name="struts2-embeddedjsp-plugin" />
+        <module name="struts2-junit-plugin" />
+        <module name="struts2-plexus-plugin" />
+        <module name="struts2-rest-showcase" />
+        <module name="struts2-portlet" />
+        <module name="struts2-sitegraph-plugin" />
+        <module name="struts2-struts1-plugin" />
+        <module name="struts2-dwr-plugin" />
+        <module name="struts2-sitemesh-plugin" />
+        <module name="struts2-javatemplates-plugin" />
+        <module name="struts2-gxp-plugin" />
+        <module name="struts2-pell-multipart-plugin" />
+        <module name="struts2-osgi-plugin" />
+        <module name="struts2-java8-support-plugin" />
+        <module name="struts2-portlet-tiles-plugin" />
+        <module name="struts2-core" />
+        <module name="struts2-portlet-plugin" />
+        <module name="struts2-tiles-plugin" />
+        <module name="struts2-mailreader" />
+        <module name="struts2-spring-plugin" />
+        <module name="struts2-cdi-plugin" />
+        <module name="struts2-jfreechart-plugin" />
+        <module name="struts2-codebehind-plugin" />
+        <module name="struts2-testng-plugin" />
+        <module name="struts2-blank" />
+        <module name="struts2-oval-plugin" />
+        <module name="struts2-json-plugin" />
+        <module name="struts2-config-browser-plugin" />
+        <module name="struts2-jasperreports-plugin" />
+        <module name="struts2-jsf-plugin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="struts2-apps" target="1.5" />
+      <module name="struts2-assembly" target="1.5" />
+      <module name="struts2-blank" target="1.5" />
+      <module name="struts2-cdi-plugin" target="1.5" />
+      <module name="struts2-codebehind-plugin" target="1.5" />
+      <module name="struts2-config-browser-plugin" target="1.5" />
+      <module name="struts2-convention-plugin" target="1.5" />
+      <module name="struts2-core" target="1.5" />
+      <module name="struts2-dojo-plugin" target="1.5" />
+      <module name="struts2-dwr-plugin" target="1.5" />
+      <module name="struts2-embeddedjsp-plugin" target="1.5" />
+      <module name="struts2-gxp-plugin" target="1.5" />
+      <module name="struts2-jasperreports-plugin" target="1.5" />
+      <module name="struts2-java8-support-plugin" target="1.5" />
+      <module name="struts2-javatemplates-plugin" target="1.5" />
+      <module name="struts2-jfreechart-plugin" target="1.5" />
+      <module name="struts2-jsf-plugin" target="1.5" />
+      <module name="struts2-json-plugin" target="1.5" />
+      <module name="struts2-junit-plugin" target="1.5" />
+      <module name="struts2-mailreader" target="1.5" />
+      <module name="struts2-osgi-plugin" target="1.5" />
+      <module name="struts2-oval-plugin" target="1.5" />
+      <module name="struts2-parent" target="1.5" />
+      <module name="struts2-pell-multipart-plugin" target="1.5" />
+      <module name="struts2-plexus-plugin" target="1.5" />
+      <module name="struts2-plugins" target="1.5" />
+      <module name="struts2-portlet" target="1.5" />
+      <module name="struts2-portlet-plugin" target="1.5" />
+      <module name="struts2-portlet-tiles-plugin" target="1.5" />
+      <module name="struts2-rest-plugin" target="1.5" />
+      <module name="struts2-rest-showcase" target="1.5" />
+      <module name="struts2-showcase" target="1.5" />
+      <module name="struts2-sitegraph-plugin" target="1.5" />
+      <module name="struts2-sitemesh-plugin" target="1.5" />
+      <module name="struts2-spring-plugin" target="1.5" />
+      <module name="struts2-struts1-plugin" target="1.5" />
+      <module name="struts2-testng-plugin" target="1.5" />
+      <module name="struts2-tiles-plugin" target="1.5" />
+      <module name="struts2-tiles3-plugin" target="1.5" />
+      <module name="xwork-core" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

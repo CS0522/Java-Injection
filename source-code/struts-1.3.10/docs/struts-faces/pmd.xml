@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.2" timestamp="2008-11-29T00:53:46.281">
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\application\FacesRequestProcessor.java">
+<violation beginline="400" endline="405" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.faces.application" class="FacesRequestProcessor" method="processPopulate" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\application\FacesTilesRequestProcessor.java">
+<violation beginline="414" endline="419" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.faces.application" class="FacesTilesRequestProcessor" method="processPopulate" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\application\PropertyResolverImpl.java">
+<violation beginline="400" endline="400" begincolumn="13" endcolumn="13" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.faces.application" class="PropertyResolverImpl" method="getDynaProperty" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\component\FormComponent.java">
+<violation beginline="479" endline="479" begincolumn="25" endcolumn="31" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.faces.component" class="FormComponent" method="createActionForm" variable="session" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'session'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\renderer\AbstractRenderer.java">
+<violation beginline="29" endline="29" begincolumn="1" endcolumn="44" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.faces.renderer" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.faces.application.FacesMessage'
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\renderer\BaseRenderer.java">
+<violation beginline="163" endline="163" begincolumn="17" endcolumn="17" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.faces.renderer" class="BaseRenderer" method="portletUri" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="165" endline="165" begincolumn="17" endcolumn="17" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.faces.renderer" class="BaseRenderer" method="portletUri" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="197" endline="197" begincolumn="13" endcolumn="13" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.faces.renderer" class="BaseRenderer" method="servletUri" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="200" endline="200" begincolumn="13" endcolumn="13" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.faces.renderer" class="BaseRenderer" method="servletUri" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\renderer\CommandLinkRenderer.java">
+<violation beginline="29" endline="29" begincolumn="1" endcolumn="39" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.faces.renderer" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.faces.component.UICommand'
+</violation>
+<violation beginline="39" endline="39" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.faces.renderer" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.struts.Globals'
+</violation>
+<violation beginline="40" endline="40" begincolumn="1" endcolumn="45" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.faces.renderer" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.struts.config.ActionConfig'
+</violation>
+<violation beginline="41" endline="41" begincolumn="1" endcolumn="45" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.faces.renderer" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.struts.config.ModuleConfig'
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\renderer\HtmlRenderer.java">
+<violation beginline="52" endline="52" begincolumn="24" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.faces.renderer" class="HtmlRenderer" variable="log" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'log'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\renderer\MessageRenderer.java">
+<violation beginline="56" endline="56" begincolumn="24" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.faces.renderer" class="MessageRenderer" variable="log" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'log'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\renderer\StylesheetRenderer.java">
+<violation beginline="51" endline="51" begincolumn="24" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.faces.renderer" class="StylesheetRenderer" variable="log" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'log'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\taglib\CommandLinkTag.java">
+<violation beginline="306" endline="311" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.faces.taglib" class="CommandLinkTag" method="setProperties" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\taglib\JavascriptValidatorTag.java">
+<violation beginline="778" endline="783" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.faces.taglib" class="JavascriptValidatorTag" method="getFormClientId" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\faces\src\main\java\org\apache\struts\faces\util\StrutsContext.java">
+<violation beginline="31" endline="31" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.faces.util" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.sql.DataSource'
+</violation>
+</file>
+</pmd>

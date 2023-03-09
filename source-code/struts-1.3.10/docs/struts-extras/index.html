@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts Extras - Welcome</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts Extras</h5>
+            <ul>
+              
+    <li class="none">
+              <strong>Welcome</strong>
+        </li>
+          </ul>
+              <h5>FAQs and HOWTOs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="dispatchValidator.html">Dispatching And Validating</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Quick Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../index.html">Struts 1</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="Welcome_to_Struts_Extras"></a>Welcome to Struts Extras</h2>
+<a name="welcome"></a><p>
+                Struts Extras provides several popular but non-essential 
+                classes, including:
+            </p>
+<table class="bodyTable"><tr class="a"><th>ActionDispatcher</th>
+<td>An Action helper class that dispatches to a public method in an Action.
+            </td>
+</tr>
+<tr class="b"><th>BaseAction</th>
+<td>BaseAction is provided as an intermediate class for shared funtionality between Action and any stock implementation provided in this package.
+            </td>
+</tr>
+<tr class="a"><th>DigestingPlugIn</th>
+<td>An implementation of PlugIn which can be configured to instantiate a graph of objects using the Commons Digester and place the root object of that graph into the Application context.
+            </td>
+</tr>
+<tr class="b"><th>DispatchAction</th>
+<td>This Action is useful for developers who prefer to combine many similar actions into a single Action class, in order to simplify their application design.
+            </td>
+</tr>
+<tr class="a"><th>DownloadAction</th>
+<td>This is an abstract base class that minimizes the amount of special coding that needs to be written to download a file. 
+            </td>
+</tr>
+<tr class="b"><th>DynaValidatorActionForm</th>
+<td>This class differs from the core DynaValidatorForm in that the key passed into the validator is the action element's 'path' attribute from the struts-config.xml which should match the form element's name attribute in the validation.xml.
+            </td>
+</tr>
+<tr class="a"><th>EventActionDispatcher</th>
+<td>An Action helper class that dispatches to to one of the public methods that are named in the parameter attribute of the corresponding ActionMapping and matches a submission parameter.
+            </td>
+</tr>
+<tr class="b"><th> EventDispatchAction</th>
+<td>An Action that dispatches to to one of the public methods that are named in the parameter attribute of the corresponding ActionMapping and matches a submission parameter
+            </td>
+</tr>
+<tr class="a"><th>ForwardAction</th>
+<td>An Action that forwards to the context-relative URI specified by the parameter property of our associated ActionMapping.
+            </td>
+</tr>
+<tr class="b"><th>IncludeAction</th>
+<td>An Action that includes the context-relative URI specified by the parameter property of our associated ActionMapping. 
+            </td>
+</tr>
+<tr class="a"><th>LocaleAction</th>
+<td>Implementation of Action that changes the user's Locale and forwards to a page, based on request level parameters that are set (language, country, and page).
+            </td>
+</tr>
+<tr class="b"><th>LookupDispatchAction</th>
+<td> An abstract Action that dispatches to the subclass mapped execute method. This is useful in cases where an HTML form has multiple submit buttons with the same name
+            </td>
+</tr>
+<tr class="a"><th>MappingDispatchAction</th>
+<td>An abstract Action that dispatches to a public method that is named by the parameter attribute of the corresponding ActionMapping.
+            </td>
+</tr>
+<tr class="b"><th>ModuleConfigVerifier</th>
+<td>Convenient implementation of PlugIn that performs as many verification tests on the information stored in the ModuleConfig  for this module as is practical.
+            </td>
+</tr>
+<tr class="a"><th>SwitchAction</th>
+<td>A standard Action that switches to a new module and then forwards control to a URI (specified in a number of possible ways) within the new module.
+            </td>
+</tr>
+<tr class="b"><th>ValidatorActionForm</th>
+<td> This class differs from the core ValidatorForm in that the key passed into the validator is the action element's 'path' attribute from the struts-config.xml which should match the form element's name attribute in the validation.xml.
+            </td>
+</tr>
+<tr class="a"><th></th>
+<td></td>
+</tr>
+</table>
+<p>
+            Many of the &quot;extra&quot; classes are simple, and the easiest way to learn how to use 
+            one of them, can be to review the 
+            <a href="apidocs/index.html">Javadocs</a> 
+            and 
+            <a href="http://svn.apache.org/viewvc/struts/struts1/trunk/extras/src/main/java/org/apache/struts/" class="externalLink">
+            source code.</a></p>
+<blockquote><p>
+            Note that there is not an &quot;extras&quot; package, per se.
+            Each of the &quot;extra&quot; classes uses a relevant package from the core distribution, 
+            such as Action, Plugins, or Validator.
+            </p>
+</blockquote><p>
+            In some cases, you may like to use these classes as a starting point 
+            for your own custom versions. 
+            In that case, feel free to adopt and adapt the source, 
+            following the provisions of the 
+            <a href="http://www.apache.org/licenses/" class="externalLink">Apache License.</a></p>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

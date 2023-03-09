@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+<duplication lines="123" tokens="169">
+<file line="80" path="C:\Workspace\STRUTS_1_3_BRANCH\apps\cookbook\src\main\java\examples\bean\ExampleBean.java"/>
+<file line="65" path="C:\Workspace\STRUTS_1_3_BRANCH\apps\cookbook\src\main\java\examples\TestBean.java"/>
+<codefragment>
+<![CDATA[
+    public TestBean() {
+        super();
+    }
+
+    // -------------------------------------------------------------- Properties
+
+    /**
+     * Returns the booleanValue.
+     * @return boolean
+     */
+    public boolean isBooleanValue() {
+        return booleanValue;
+    }
+
+    /**
+     * Returns the doubleValue.
+     * @return double
+     */
+    public double getDoubleValue() {
+        return doubleValue;
+    }
+
+    /**
+     * Returns the floatValue.
+     * @return float
+     */
+    public float getFloatValue() {
+        return floatValue;
+    }
+
+    /**
+     * Returns the intValue.
+     * @return int
+     */
+    public int getIntValue() {
+        return intValue;
+    }
+
+    /**
+     * Returns the longValue.
+     * @return long
+     */
+    public long getLongValue() {
+        return longValue;
+    }
+
+    /**
+     * Returns the shortValue.
+     * @return short
+     */
+    public short getShortValue() {
+        return shortValue;
+    }
+
+    /**
+     * Returns the stringValue.
+     * @return String
+     */
+    public String getStringValue() {
+        return stringValue;
+    }
+
+    /**
+     * Sets the booleanValue.
+     * @param booleanValue The booleanValue to set
+     */
+    public void setBooleanValue(boolean booleanValue) {
+        this.booleanValue = booleanValue;
+    }
+
+    /**
+     * Sets the doubleValue.
+     * @param doubleValue The doubleValue to set
+     */
+    public void setDoubleValue(double doubleValue) {
+        this.doubleValue = doubleValue;
+    }
+
+    /**
+     * Sets the floatValue.
+     * @param floatValue The floatValue to set
+     */
+    public void setFloatValue(float floatValue) {
+        this.floatValue = floatValue;
+    }
+
+    /**
+     * Sets the intValue.
+     * @param intValue The intValue to set
+     */
+    public void setIntValue(int intValue) {
+        this.intValue = intValue;
+    }
+
+    /**
+     * Sets the longValue.
+     * @param longValue The longValue to set
+     */
+    public void setLongValue(long longValue) {
+        this.longValue = longValue;
+    }
+
+    /**
+     * Sets the shortValue.
+     * @param shortValue The shortValue to set
+     */
+    public void setShortValue(short shortValue) {
+        this.shortValue = shortValue;
+    }
+
+    /**
+     * Sets the stringValue.
+     * @param stringValue The stringValue to set
+     */
+    public void setStringValue(String stringValue) {
+        this.stringValue = stringValue;
+    }
+
+    /**
+     * Returns the dateValue.
+     * @return java.util.Date
+     */
+    public java.util.Date getDateValue() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="13" tokens="100">
+<file line="87" path="C:\Workspace\STRUTS_1_3_BRANCH\apps\cookbook\src\main\java\examples\logic\PrepareLogicAction.java"/>
+<file line="124" path="C:\Workspace\STRUTS_1_3_BRANCH\apps\cookbook\src\main\java\examples\options\PrepareOptionsAction.java"/>
+<codefragment>
+<![CDATA[
+        request.setAttribute("days", days);
+
+        /* Collection of custom beans */
+        ArrayList books = new ArrayList();
+        books.add(new BookBean("0596003285", "Programming Jakarta Struts"));
+        books.add(new BookBean("1930110502", "Struts in Action"));
+        books.add(
+            new BookBean("1861007817", "Professional Struts Applications"));
+        books.add(new BookBean("0672324725", "Struts Kick Start"));
+        books.add(new BookBean("0471213020", "Mastering Jakarta Struts"));
+        books.add(new BookBean("1558608621", "The Struts Framework"));
+        books.add(new BookBean("0971661901", "Struts Fast Track"));
+        request.setAttribute("books", books);
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>

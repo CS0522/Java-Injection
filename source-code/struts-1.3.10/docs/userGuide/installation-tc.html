@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 1 - The Struts Framework Project - Installation - Tomcat with
+            Apache</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 1</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../learning.html">Learning</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../roadmap.html">Roadmap</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../downloads.html">Releases</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../userGuide/index.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faqs/index.html">FAQs and HOWTOs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../userGuide/release-notes.html">Release Notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../dtddoc/index.html">DTDDoc</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://wiki.apache.org/struts/" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="a6.2_Installation"></a>6.2 Installation</h2>
+<div class="section"><h3><a name="Installing_Struts_with_your_servlet_container"></a>Installing Struts with your servlet container</h3>
+<h4>Tomcat 3.2.1 With Apache</h4>
+<p>Note that the instructions for Tomcat 4 will be different
+                    than those for Tomcat 3,
+                    but the Tomcat 4.0 web connector is still under
+                    development. Versions of Tomcat prior
+                    to 3.2.1 are not recommend for use with Struts.</p>
+<ul><li>These instructions assume you have successfully
+                        integrated Tomcat with Apache
+                        according to the Tomcat documentation.</li>
+<li>Copy &quot;struts-documentation.war&quot; and
+                        &quot;struts-example.war&quot; to your $TOMCAT_HOME/webapps
+                        directory</li>
+<li>Restart Tomcat if it is already running</li>
+<li>Tomcat will generate a file
+                        &quot;$TOMCAT_HOME/conf/tomcat-apache.conf&quot; that
+                        will be used by Apache. This file is regenerated every
+                        time you start Tomcat,
+                        so copy this file to a safe place (such as your Apache
+                        configuration directory;
+                        on Unix systems this is usually
+                        <code>/usr/local/apache/conf</code>
+                        .
+                    </li>
+<li>If you are running Tomcat 3.1, Tomcat will not have
+                        generated the entries
+                        for your new applications. Add the following lines to
+                        the
+                        <code>tomcat-apache.conf</code>
+                        file that you have saved, replacing $TOMCAT_HOME with
+                        the path to your Tomcat
+                        home directory:
+                    </li>
+</ul>
+<pre>
+                    Alias /struts-documentation
+                    &quot;$TOMCAT_HOME/webapps/struts-documentation
+                    &lt;Directory &quot;$TOMCAT_HOME/webapps/struts-documentation&gt;
+                    Options Indexes FollowSymLinks
+                    &lt;/Directory&gt;
+                    ApJServMount /struts-documentation/servlet
+                    /struts-documentation
+                    &lt;Location &quot;/struts-documentation/WEB-INF/&quot;&gt;
+                    AllowOverride None
+                    deny from all
+                    &lt;/Location&gt;
+                    Alias /struts-example
+                    &quot;$TOMCAT_HOME/webapps/struts-example&quot;
+                    &lt;Directory &quot;$TOMCAT_HOME/webapps/struts-example&gt;
+                    Options Indexes FollowSymLinks
+                    &lt;/Directory&gt;
+                    ApJServMount /struts-example/servlet /struts-example
+                    &lt;Location &quot;/struts-example/WEB-INF/&quot;&gt;
+                    AllowOverride None
+                    deny from all
+                    &lt;/Location&gt;
+                </pre><ul><li>The generated file above does not know anything
+                        about extension mappings defined in a web.xml file, so
+                        the &quot;*.do&quot; URIs that
+                        go to the controller servlet will not be recognized.
+                        To fix this, add the
+                        following line to the saved version of
+                        &quot;tomcat-apache.conf&quot;, after the corresponding
+                        line for the .jsp extension:
+                        <br />
+<code>AddHandler jserv-servlet .do</code></li>
+<li>Ensure that the saved version of &quot;tomcat-apache.conf&quot;
+                        is referenced in your
+                        Apache &quot;httpd.conf&quot; configuration file. A typical use
+                        would have the following
+                        line at the bottom of &quot;httpd.conf&quot;:
+                        <br />
+<code>Include
+                            /usr/local/apache/conf/tomcat-apache.conf</code></li>
+<li>In order to recognize &quot;index.jsp&quot; as a default page
+                        for web applications,
+                        search in your &quot;httpd.conf&quot; for a &quot;DirectoryIndex&quot;
+                        directive. If you have
+                        one, add &quot;index.jsp&quot; to the end of the list, so that
+                        it might look like this:
+                        <br />
+<code>DirectoryIndex index.html index.jsp</code><br />
+
+                        If you do not have such an entry, add one like this:
+                        <br />
+<code>DirectoryIndex index.jsp</code></li>
+<li>Restart Apache to make it aware of the new
+                        applications. You should now
+                        be able to access the applications from a browser like
+                        this:
+                        <br />
+<code>http://localhost/struts-documentation
+                            <br />
+
+                            http://localhost/struts-example
+                        </code></li>
+</ul>
+<hr />
+<p>Back to
+                    <a href="installation.html#Containers">Installation</a></p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

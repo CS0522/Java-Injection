@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.2" timestamp="2008-11-29T00:46:16.281">
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\TagUtils.java">
+<violation beginline="1022" endline="1022" begincolumn="25" endcolumn="25" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.taglib" class="TagUtils" method="pageURL" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\bean\ParameterTag.java">
+<violation beginline="134" endline="136" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.taglib.bean" class="ParameterTag" method="doStartTag" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\bean\WriteTag.java">
+<violation beginline="226" endline="229" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.taglib.bean" class="WriteTag" method="doStartTag" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\html\BaseHandlerTag.java">
+<violation beginline="872" endline="874" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.taglib.html" class="BaseHandlerTag" method="getJstlLoopIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="874" endline="875" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.taglib.html" class="BaseHandlerTag" method="getJstlLoopIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\html\ImageTag.java">
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.taglib.html" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.struts.Globals'
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\logic\CompareTagBase.java">
+<violation beginline="126" endline="126" begincolumn="17" endcolumn="17" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.taglib.logic" class="CompareTagBase" method="condition" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="135" endline="135" begincolumn="17" endcolumn="17" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.taglib.logic" class="CompareTagBase" method="condition" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\taglib\src\main\java\org\apache\struts\taglib\nested\logic\NestedIterateTei.java">
+<violation beginline="46" endline="49" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Basic Rules" package="org.apache.struts.taglib.nested.logic" class="NestedIterateTei" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+</pmd>

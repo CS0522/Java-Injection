@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.2" timestamp="2008-11-29T00:49:12.937">
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\DefinitionsFactoryConfig.java">
+<violation beginline="126" endline="128" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.apache.struts.tiles" class="DefinitionsFactoryConfig" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'initParameters'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\RedeployableActionServlet.java">
+<violation beginline="29" endline="29" begincolumn="1" endcolumn="50" rule="ImportFromSamePackage" ruleset="Import Statement Rules" package="org.apache.struts.tiles" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+<violation beginline="30" endline="30" begincolumn="1" endcolumn="59" rule="ImportFromSamePackage" ruleset="Import Statement Rules" package="org.apache.struts.tiles" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+<violation beginline="31" endline="31" begincolumn="1" endcolumn="53" rule="ImportFromSamePackage" ruleset="Import Statement Rules" package="org.apache.struts.tiles" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\commands\TilesPreProcessor.java">
+<violation beginline="27" endline="27" begincolumn="1" endcolumn="45" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.tiles.commands" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.servlet.http.HttpServletRequest'
+</violation>
+<violation beginline="43" endline="43" begincolumn="1" endcolumn="56" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.tiles.commands" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.struts.upload.MultipartRequestWrapper'
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\taglib\ImportAttributeTag.java">
+<violation beginline="194" endline="197" begincolumn="11" endcolumn="11" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.tiles.taglib" class="ImportAttributeTag" method="doStartTag" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\taglib\InsertTag.java">
+<violation beginline="721" endline="723" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.tiles.taglib" class="InsertTag" method="processAsDefinitionOrURL" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\xmlDefinition\I18nFactorySet.java">
+<violation beginline="211" endline="213" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.tiles.xmlDefinition" class="I18nFactorySet" method="initFactory" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="483" endline="484" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.tiles.xmlDefinition" class="I18nFactorySet" method="parseXmlFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="504" endline="504" begincolumn="17" endcolumn="20" rule="UnconditionalIfStatement" ruleset="Basic Rules" package="org.apache.struts.tiles.xmlDefinition" class="I18nFactorySet" method="parseXmlFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnconditionalIfStatement" priority="3">
+Do not use if statements that are always true or always false
+</violation>
+</file>
+</pmd>

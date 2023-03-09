@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Struts Apps - Scripting Mailreader - Checkstyle report</title>
+    <link>http://struts.apache.org/struts-apps/struts-scripting-mailreader</link>
+    <description>Struts Apps - Scripting Mailreader - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2000 - 2008 Apache Software Foundation</copyright>
+    <item>
+      <title>File: 4,
+             Errors: 14,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://struts.apache.org/struts-apps/struts-scripting-mailreader/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://struts.apache.org/struts-apps/struts-scripting-mailreader/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-scripting-mailreader/checkstyle.html#org.apache.struts.apps.scriptingmailreader.plugin.package.html">org/apache/struts/apps/scriptingmailreader/plugin/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-scripting-mailreader/checkstyle.html#org.apache.struts.apps.scriptingmailreader.package.html">org/apache/struts/apps/scriptingmailreader/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-scripting-mailreader/checkstyle.html#org.apache.struts.apps.scriptingmailreader.Constants.java">org/apache/struts/apps/scriptingmailreader/Constants.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-scripting-mailreader/checkstyle.html#org.apache.struts.apps.scriptingmailreader.plugin.MemoryDatabasePlugIn.java">org/apache/struts/apps/scriptingmailreader/plugin/MemoryDatabasePlugIn.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

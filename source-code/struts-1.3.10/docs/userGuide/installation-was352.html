@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 1 - The Struts Framework Project - Installation - WebSphere
+            3.5.2</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 1</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../learning.html">Learning</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../roadmap.html">Roadmap</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../downloads.html">Releases</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../userGuide/index.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faqs/index.html">FAQs and HOWTOs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../userGuide/release-notes.html">Release Notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../dtddoc/index.html">DTDDoc</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://wiki.apache.org/struts/" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="a6.2_Installation"></a>6.2 Installation</h2>
+<div class="section"><h3><a name="Installing_Struts_with_your_servlet_container"></a>Installing Struts with your servlet container</h3>
+<h4>WebSphere Application Server 3.5 FixPack
+                    2</h4>
+<ul><li>In the steps below,
+                        <code>$WAS_HOME</code>
+                        refers to the directory in which you
+                        have installed WebSphere Application Server, and
+                        <code>$STRUTS_HOME</code>
+                        is the
+                        directory in which you unpacked the Struts binary
+                        distribution.
+                    </li>
+<li>WebSphere before 3.5.2 did not support JSP 1.1 and
+                        Servlet 2.2, which
+                        made it difficult to get Struts functioning without
+                        massive code changes.
+                        Please upgrade to 3.5.2 (3.5 with FixPack 2) before
+                        attempting to use
+                        Struts. See
+                        <a href="http://www.ibm.com/software/webservers/appserv/efix.html" class="externalLink">
+                            http://www.ibm.com/software/webservers/appserv/efix.html</a>
+                        for download and install instructions on FixPack 2 for
+                        WebSphere 3.5
+                    </li>
+<li>Warning: Struts will not work with WebSphere 3.5.2 out
+                        of the box. Fixes
+                        expected to be in WebSphere 3.5.3 (not released at
+                        time of writing) should
+                        correct this. However, you can successfully get
+                        WebSphere 3.5.2 working
+                        with Struts.</li>
+<li>Make sure the WebSphere Application Server is started.
+                        Under Windows
+                        NT/2000, it's the &quot;IBM WS AdminServer&quot; service.</li>
+<li>Start the WebSphere Administrative Console.</li>
+<li>Once it's started, select &quot;Convert a War File&quot; from
+                        the tasks toolbar
+                        option, or from the Console-&gt;Tasks menu. This will
+                        cause a &quot;Convert War
+                        File&quot; Wizard dialog to appear.</li>
+<li>Select a Servlet Engine to host the web application
+                        that will result
+                        from converting the War file, e.g. &quot;Default Servlet
+                        Engine&quot;, by expanding
+                        the tree control under Nodes. Press the Next
+                        button.</li>
+<li>Select a Virtual Host to associate the resulting web
+                        application with,
+                        e.g. &quot;default host&quot;. Press the Next button.</li>
+<li>Press the Browse button and choose the
+                        <code>$STRUTS_HOME/webapps/struts-example.war</code>
+                        . Press the Next button
+                    </li>
+<li>Select a destination directory for the resulting web
+                        application, e.g.
+                        <code>$WAS_HOME/hosts/default_host</code>
+                        . Press the Next button
+                    </li>
+<li>Enter a &quot;Web Application Web Path&quot;, e.g.
+                        struts-example, and a &quot;Web
+                        Application Name&quot;, e.g. struts-example. Press the
+                        Finish button.</li>
+<li>You should, after a lengthy pause, get a message box
+                        with the text
+                        Command &quot;convert war file&quot; completed successfully.
+                        Press Ok.</li>
+<li>You now need to add jaxp.jar and a jaxp compatible
+                        parser, e.g.
+                        parser.jar from JAXP 1.0.1 to the struts-example web
+                        application's
+                        servlets directory, e.g.
+                        <code>
+                            $WAS_HOME/AppServer/hosts/default_host/struts-example/servlets</code></li>
+<li>At this point, if WAS 3.5.2 correctly implemented
+                        Servlet 2.2, all
+                        would be fine. However, WAS 3.5.2 returns null for
+                        calls to
+                        <code>ServletContext.getResource(String)</code>
+                        or
+                        <code>
+                            ServletContext.getResourceAsStream(String)</code>
+                        . This manifests itself as an
+                        exception in the application server stdout log, e.g.
+                        <code>default_server_stdout.log.</code></li>
+<li>Warning: Don't be fooled by the fact that the web
+                        application starts
+                        successfully from the Admin Console. It actually
+                        doesn't. The Admin
+                        Console is lying. If you try to access the webapp
+                        e.g.
+                        <code>http://localhost/struts-example/</code>
+                        it will fail.
+                    </li>
+<li>At this point, you need to patch the Struts source.
+                        There are three
+                        places
+                        <code>getResourceAsStream</code>
+                        is called:
+                    </li>
+</ul>
+<pre>
+                    ResourceTag.doStartTag()
+                    ActionServlet.initMapping()
+                    PropertyMessageResources.loadLocale(String)
+                </pre><p>of these,
+                    <code>ActionServlet</code>
+                    is the most important.
+                </p>
+<ul><li>Change the source from</li>
+</ul>
+<pre>
+                    // Acquire an input stream to our configuration resource
+                    InputStream input =
+                    getServletContext().getResourceAsStream(config);
+                </pre><p>to</p>
+<pre>
+                    // Acquire an input stream to our configuration resource
+                    InputStream input = new
+                    java.io.FileInputStream(getServletContext().getRealPath(config));
+                </pre><ul><li>Make similar changes to the other classes if
+                        necessary.</li>
+<li>Recompile ActionServlet and copy the
+                        <code>.class</code>
+                        file to
+                        <br />
+<code>
+                            $WAS_HOME/AppServer/hosts/default_host/struts-example/servlets/
+                            <br />
+
+                            org/apache/struts/action/ActionServlet.class
+                        </code></li>
+<li>Another bug with WAS 3.5.2's classloaders is that
+                        Class.getResource()
+                        wont load a resource from a jar, so you must copy
+                        <br />
+<code>$STRUTS_HOME/lib/struts-config_1_0.dtd</code><br />
+
+                        to
+                        <br />
+<code>
+                            $WAS_HOME/AppServer/hosts/default_host/struts-example/servlets/org/apache/struts/resources/struts-config_1_0.dtd</code><br />
+
+                        or be connected to the Internet to fetch the dtd from
+                        the Jakarta website.
+                    </li>
+<li>Start your webapp in the Admin Console</li>
+<li>Test the example application by loading the following
+                        URL in your
+                        browser of choice:
+                        <a href="http://localhost/struts-example/" class="externalLink">
+                            http://localhost/struts-example/&quot;
+                            &gt;http://localhost/struts-example/</a></li>
+</ul>
+<hr />
+<p>Back to
+                    <a href="installation.html#Containers">Installation</a></p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

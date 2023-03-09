@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts Scripting - Welcome</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts Scripting</h5>
+            <ul>
+              
+    <li class="none">
+              <strong>Welcome</strong>
+        </li>
+              
+    <li class="none">
+                    <a href="user-guide.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="source-guide.html">Source Guide</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Quick Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../index.html">Struts 1</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="Welcome_to_Struts_Scripting"></a>Welcome to Struts Scripting</h2>
+<a name="overview"></a><p>This component allows Struts Actions to be written in the scripting 
+      language of one's choice rather than as Java classes.  It uses the 
+      <a href="http://jakarta.apache.org/bsf" class="externalLink">Bean Scripting Framework</a> 
+      to allow scripts to be written in any language BSF supports like Perl, 
+      Python, Ruby, JavaScript, Groovy, and even VBScript.  
+        </p>
+<p>
+        Struts Scripting allows an application to be developed rapidly with
+        the quick development cycle (edit file -&gt; refresh browser) that one 
+        would expect in a scripting environment.  Furthermore, it enables other
+        non-Java trained members of a development group, such as web designers who
+        may have a scripting background, to be more involved, leaving the Java
+        developers to create the reusable services the Struts actions will interact
+        with.  Finally, when used with Java-like languages such as <a href="http://groovy.codehaus.org" class="externalLink">Groovy</a>, applications can quickly be
+        stood up, then later the Struts action scripts can be migrated to Java for
+        better performance.
+      </p>
+<div class="section"><h3><a name="Features"></a>Features</h3>
+<a name="features"></a><ul><li>Implement Actions with JavaScript, Groovy, etc.</li>
+<li>Supports all BSF languages</li>
+<li>Scripts cached in memory on first use</li>
+<li>Ability to pass parameters to script through Struts config</li>
+</ul>
+</div>
+<div class="section"><h3><a name="Documentation"></a>Documentation</h3>
+<a name="documentation"></a><ul><li><a href="user-guide.html">User Guide</a> - Covers installation and usage</li>
+<li><a href="source-guide.html">Source Code Guide</a> - Covers the source layout and how to build Struts Scripting</li>
+<li><a href="apidocs/index.html">Javadocs</a> - Includes 
+                <a href="apidocs/org/apache/struts/scripting/StrutsInfo.html"><code>struts</code></a> variable and 
+                <a href="apidocs/org/apache/struts/scripting/BSFManagerFilter.html">Filter</a> API's.</li>
+<li><a href="http://svn.apache.org/viewvc/struts/action/trunk/apps/scripting-mailreader/src/main/" class="externalLink">Struts 
+                Mailreader</a> - A rewrite of the Struts Mailreader example application using Struts Scripting 
+                and <a href="http://groovy.codehaus.org" class="externalLink">Groovy</a></li>
+</ul>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 1 - Struts Release Notes (since 1.2.7)</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 1</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../learning.html">Learning</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../roadmap.html">Roadmap</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../downloads.html">Releases</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../userGuide/index.html">User Guide</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faqs/index.html">FAQs and HOWTOs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../userGuide/release-notes.html">Release Notes</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../dtddoc/index.html">DTDDoc</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://wiki.apache.org/struts/" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="../project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="a6.1_Release_Notes_-_Version_1.2.8"></a>6.1 Release Notes - Version 1.2.8</h2>
+<div class="section"><h3><a name="Introduction"></a>Introduction</h3>
+<p>
+                    The main motivation for releasing Struts 1.2.8 is to fix a
+                    <i>Cross Site Scripting</i>
+                    (XSS) vulnerability which has
+                    been identified by Hacktics.com. More details available on
+                    the
+                    <a href="http://wiki.apache.org/struts/StrutsXssVulnerability" class="externalLink">
+                        Wiki</a>
+                    .
+                </p>
+<p>
+                    This section contains release notes for changes that have
+                    taken
+                    place since
+                    <a href="release-notes-1_2_7.html">Version 1.2.7</a>
+                    .
+                    To keep up-to-date on all changes to Struts, subscribe to
+                    the
+                    dev@ list.
+                </p>
+<p><b>Notes on upgrading</b>
+                    are maintained in the
+                    <a href="http://wiki.apache.org/struts/StrutsUpgrade" class="externalLink">Wiki
+                        Upgrade pages</a>
+                    .
+                    The wiki is a community maintained resource - please feel
+                    free to add your
+                    input so that everyone can benefit from the collective
+                    experience.
+                </p>
+<p>
+                    For the version requirements of each library, see the
+                    <a href="installation.html">Installation chapter</a>
+                    .
+                </p>
+<h3 id="STRUTS_1_2_8">Version 1.2.8</h3><p>
+                    After
+                    <a href="http://svn.apache.org/viewcvs.cgi/struts/core/tags/STRUTS_1_2_6/" class="externalLink">
+                        Version 1.2.6 was tagged</a>
+                    the
+                    <a href="http://svn.apache.org/viewcvs.cgi/struts/core/branches/STRUTS_1_2_BRANCH/" class="externalLink">
+                        1.2 Branch</a>
+                    was created and work started on the next version (
+                    <i>1.3.x series</i>
+                    ). Work has continued on
+                    both versions and
+                    <i>Revision</i>
+                    numbers shown in brackets are where a change has been
+                    ported
+                    from the current development version into the
+                    <i>1.2 Branch</i>
+                    .
+                </p>
+<table class="bodyTable"><thead><tr class="a"><th>Modification</th>
+<th>Revision</th>
+<th>Bugzilla</th>
+<th>Description</th>
+</tr>
+</thead><tr class="b"><td>2005-11-07</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=331261&amp;view=rev" class="externalLink">
+                                331261</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=331265&amp;view=rev" class="externalLink">
+                                331265</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=37131" class="externalLink">
+                                37131</a></td>
+<td>Escape newlines in Validator variables.</td>
+</tr>
+<tr class="a"><td>2005-11-05</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=191272&amp;view=rev" class="externalLink">
+                                191272</a>
+                            and
+                            <a href="http://svn.apache.org/viewcvs?rev=192949&amp;view=rev" class="externalLink">
+                                192949</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=331056&amp;view=rev" class="externalLink">
+                                331056</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=35127" class="externalLink">
+                                35127</a></td>
+<td>Changing rendering of the form name to use the
+                            'id' attribute when in XHTML strict mode.</td>
+</tr>
+<tr class="b"><td>2005-11-05</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=331060&amp;view=rev" class="externalLink">
+                                331060</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=331055&amp;view=rev" class="externalLink">
+                                331055</a>
+                            )
+                        </td>
+<td><i>n/a</i></td>
+<td>Fix for Struts XSS Vulnerability - remove uri from
+                            error messages.</td>
+</tr>
+<tr class="a"><td>2005-08-31</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=265661&amp;view=rev" class="externalLink">
+                                265661</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=265658&amp;view=rev" class="externalLink">
+                                265658</a>
+                            )
+                        </td>
+<td><i>n/a</i></td>
+<td>Remove I18nFactorySet copied code.</td>
+</tr>
+<tr class="b"><td>2005-08-29</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=264694&amp;view=rev" class="externalLink">
+                                264694</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=264684&amp;view=rev" class="externalLink">
+                                264684</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=32584" class="externalLink">
+                                32584</a></td>
+<td>Provide config option to turn off MessageResources
+                            escape processing.</td>
+</tr>
+<tr class="a"><td>2005-08-29</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=226545&amp;view=rev" class="externalLink">
+                                226545</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=264662&amp;view=rev" class="externalLink">
+                                264662</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=35833" class="externalLink">
+                                35833</a></td>
+<td>Fix bug where non-resource action messages only
+                            work for the first message in the messages
+                            list.</td>
+</tr>
+<tr class="b"><td>2005-06-20</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=191474&amp;view=rev" class="externalLink">
+                                191474</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=191475&amp;view=rev" class="externalLink">
+                                191475</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=35421" class="externalLink">
+                                35421</a></td>
+<td>Correct link on the acquiring page to the maven
+                            generated nightly builds.</td>
+</tr>
+<tr class="a"><td>2005-06-17</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=190794&amp;view=rev" class="externalLink">
+                                190794</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=191170&amp;view=rev" class="externalLink">
+                                191170</a>
+                            )
+                        </td>
+<td><i>n/a</i></td>
+<td>Update TagUtils to provide a more specific error
+                            message where properties on a formbean are not
+                            found.</td>
+</tr>
+<tr class="b"><td>2005-06-16</td>
+<td><a href="http://svn.apache.org/viewcvs.cgi?rev=191011&amp;view=rev" class="externalLink">
+                                191011</a></td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=34460" class="externalLink">
+                                34460</a></td>
+<td>Update to the HTML tag library docs.</td>
+</tr>
+<tr class="a"><td>2005-06-16</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=191001&amp;view=rev" class="externalLink">
+                                191001</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=191002&amp;view=rev" class="externalLink">
+                                191002</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=32313" class="externalLink">
+                                32313</a></td>
+<td>Update tag library configuration docs for Servlet
+                            2.4.</td>
+</tr>
+<tr class="b"><td>2005-06-15</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=190634&amp;view=rev" class="externalLink">
+                                190634</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=190779&amp;view=rev" class="externalLink">
+                                190779</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=23864" class="externalLink">
+                                23864</a></td>
+<td>Filter html sensitive characters in the &lt;html:radio&gt;
+                            tag's value.</td>
+</tr>
+<tr class="a"><td>2005-06-15</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=190804&amp;view=rev" class="externalLink">
+                                190804</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=190807&amp;view=rev" class="externalLink">
+                                190807</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=3202" class="externalLink">
+                                3202</a></td>
+<td>&lt;html:options&gt; tag logic updated to be more
+                            efficient with use of iterators.</td>
+</tr>
+<tr class="b"><td>2005-06-15</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=190631&amp;view=rev" class="externalLink">
+                                190631</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=190780&amp;view=rev" class="externalLink">
+                                190780</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=27861" class="externalLink">
+                                27861</a></td>
+<td>Add better error reporting to &lt;bean:define&gt;
+                            tag.</td>
+</tr>
+<tr class="a"><td>2005-06-04</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=180002&amp;view=rev" class="externalLink">
+                                180002</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=180001&amp;view=rev" class="externalLink">
+                                180001</a>
+                            )
+                        </td>
+<td><i>n/a</i></td>
+<td>Add warning to ActionMapping.findForward() method
+                            if not found.</td>
+</tr>
+<tr class="b"><td>2005-05-27</td>
+<td><a href="http://svn.apache.org/viewcvs.cgi?rev=178799&amp;view=rev" class="externalLink">
+                                178799</a></td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=35108" class="externalLink">
+                                35108</a></td>
+<td>Add comment regarding jdbc20ext.jar and JDK to
+                            build.properties.sample.</td>
+</tr>
+<tr class="a"><td>2005-05-18</td>
+<td><a href="http://svn.apache.org/viewcvs?rev=170859&amp;view=rev" class="externalLink">
+                                170859</a>
+                            (
+                            <a href="http://svn.apache.org/viewcvs.cgi?rev=170858&amp;view=rev" class="externalLink">
+                                170858</a>
+                            )
+                        </td>
+<td><a href="http://issues.apache.org/bugzilla/show_bug.cgi?id=34949" class="externalLink">
+                                34949</a></td>
+<td>Add no-arg constructor to ModuleConfigImpl.</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a></a></h3>
+<p>Next:
+                    <a href="installation.html">Installation</a></p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

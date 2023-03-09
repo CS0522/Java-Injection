@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+<duplication lines="48" tokens="102">
+<file line="393" path="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\taglib\PutTag.java"/>
+<file line="212" path="C:\Workspace\STRUTS_1_3_BRANCH\tiles\src\main\java\org\apache\struts\tiles\taglib\util\TagUtils.java"/>
+<codefragment>
+<![CDATA[
+        } catch (NoSuchMethodException ex) {
+            throw new JspException(
+                "Error - component.PutAttributeTag : Error while retrieving value from bean '"
+                    + beanName
+                    + "' with property '"
+                    + beanProperty
+                    + "' in scope '"
+                    + beanScope
+                    + "'. (exception : "
+                    + ex.getMessage(), ex);
+
+        } catch (InvocationTargetException ex) {
+            throw new JspException(
+                "Error - component.PutAttributeTag : Error while retrieving value from bean '"
+                    + beanName
+                    + "' with property '"
+                    + beanProperty
+                    + "' in scope '"
+                    + beanScope
+                    + "'. (exception : "
+                    + ex.getMessage(), ex);
+
+        } catch (IllegalAccessException ex) {
+            throw new JspException(
+                "Error - component.PutAttributeTag : Error while retrieving value from bean '"
+                    + beanName
+                    + "' with property '"
+                    + beanProperty
+                    + "' in scope '"
+                    + beanScope
+                    + "'. (exception : "
+                    + ex.getMessage(), ex);
+        }
+    }
+
+    /**
+     * Store bean in requested context.
+     * If scope is <code>null</code>, save it in REQUEST_SCOPE context.
+     *
+     * @param pageContext Current pageContext.
+     * @param name Name of the bean.
+     * @param scope Scope under which bean is saved (page, request, session, application)
+     *  or <code>null</code> to store in <code>request()</code> instead.
+     * @param value Bean value to store.
+     *
+     * @exception JspException Scope name is not recognized as a valid scope
+     */
+    public static void setAttribute(
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>

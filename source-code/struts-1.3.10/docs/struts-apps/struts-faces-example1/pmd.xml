@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.2" timestamp="2008-11-29T00:57:47.875">
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\apps\faces-example1\src\main\java\org\apache\struts\webapp\example\memory\MemoryUserDatabase.java">
+<violation beginline="217" endline="217" begincolumn="21" endcolumn="21" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.webapp.example.memory" class="MemoryUserDatabase" method="open" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="347" endline="348" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.apache.struts.webapp.example.memory" class="MemorySubscriptionCreationFactory" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'database'.
+</violation>
+</file>
+</pmd>

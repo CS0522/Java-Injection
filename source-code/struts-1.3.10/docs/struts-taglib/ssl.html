@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts Taglib - Secure Socket Layer and Web Applications</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts Taglib</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+          </ul>
+              <h5>FAQs and HOWTOs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="faq.html">Taglib FAQ</a>
+          </li>
+              
+    <li class="none">
+                    <a href="building_view.html">Building View Components</a>
+          </li>
+              
+    <li class="none">
+                    <a href="indexedprops.html">Indexed Properties</a>
+          </li>
+          </ul>
+              <h5>Struts Taglib Guides</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="dev_bean.html">Bean</a>
+          </li>
+              
+    <li class="none">
+                    <a href="dev_html.html">HTML</a>
+          </li>
+              
+    <li class="none">
+                    <a href="dev_logic.html">Logic</a>
+          </li>
+              
+    <li class="none">
+                    <a href="dev_nested.html">Nested</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Related Resources</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="http://displaytag.sourceforge.net/" class="externalLink">Display Tag</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://www.rabago.net/struts/html2/" class="externalLink">html2</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://java.sun.com/products/jsp/jstl/" class="externalLink">JSTL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://java.sun.com/j2ee/javaserverfaces/" class="externalLink">JSF</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://struts.application-servers.com" class="externalLink">Struts Layout</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://struts-menu.sourceforge.net/" class="externalLink">Struts Menu</a>
+          </li>
+          </ul>
+              <h5>Quick Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../index.html">Struts 1</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2><a name="Secure_Socket_Layer_and_Web_Applications"></a>Secure Socket Layer and Web Applications</h2>
+<a name="overview"></a><div class="section"><h3><a name="Overview"></a>Overview</h3>
+<p>
+                    Many web applications, especially those deployed for
+                    e-commerce, necessitate the
+                    transmission of sensitive data between the web server and
+                    the client browser. This data
+                    may include passwords, credit card numbers, bank account
+                    numbers or any other
+                    information that users would not want to divulge to the
+                    general public. To protect
+                    sensitive data during transmission, application developers
+                    typically use the Secure
+                    Sockets Layer (SSL) and its companion protocol, HTTP over
+                    Secure Sockets Layer
+                    (HTTPS). HTTPS employs SSL to protect data by encrypting
+                    it at the source, be it the
+                    server or the client, and decrypting it at the
+                    destination. This prevents anyone monitoring
+                    Internet data transmissions from easily capturing this
+                    data. The client and server
+                    exchange public keys to enable encryption and decryption
+                    to occur.
+                </p>
+<p>
+                    The encryption/decryption process comes at a performance
+                    price, however. The
+                    throughput of data for a web server transmitting via HTTPS
+                    is often as little as one-tenth
+                    that of data transmission via HTTP. For this reason, it is
+                    undesirable to deploy an entire
+                    web application under SSL. For fastest performance, it is
+                    best to deploy a web
+                    application under HTTP and employ HTTPS only for those
+                    pages and processes that
+                    transmit sensitive data.
+                </p>
+</div>
+<a name="mixing"></a><div class="section"><h3><a name="Mixing_Protocols_in_Web_Applications"></a>Mixing Protocols in Web Applications</h3>
+<p>
+                    Switching back and forth between the two protocols can
+                    require hard-coding the protocol
+                    and full URL in every link to each resource in the web
+                    application. This creates an
+                    ongoing maintenance headache for developers each time a
+                    server name changes or secure
+                    protocol requirements change for resources in the web app.
+                </p>
+<p>
+                    Another significant hazard is that there is nothing to
+                    prevent a user from specifying the
+                    wrong protocol by manually entering a URL into the
+                    browser. The penalty for manually
+                    specifying HTTPS for a page or servlet that does not
+                    require HTTPS is reduced
+                    performance. Far worse is the penalty for manually
+                    specifying HTTP for non-secure
+                    access of a page that does require HTTPS: public exposure
+                    of sensitive data.
+                </p>
+</div>
+<a name="help"></a><div class="section"><h3><a name="Help_from_Deployment_Descriptor"></a>Help from Deployment Descriptor</h3>
+<p>
+                    To help overcome the problem of non-secure access of
+                    sensitive data, the Java Servlet
+                    Specification (versions 2.2 and 2.3) defines the
+                    transport-guarantee element of the
+                    web.xml deployment descriptor file. The
+                    transport-guarantee element must specify one
+                    of three types of protection for communication between
+                    client and server: NONE,
+                    INTEGRAL, or CONFIDENTIAL. For most containers a
+                    specification of INTEGRAL
+                    or CONFIDENTIAL is treated as a requirement for SSL usage.
+                    Web application
+                    containers will prevent users from accessing web resources
+                    over HTTP if they have been
+                    so specified.
+                </p>
+<p>
+                    The implementation for blocking HTTP access to web
+                    resources specified as INTEGRAL
+                    or CONFIDENTIAL varies from container to container. If a
+                    user attempts to access such
+                    a resource over HTTP, some containers will present that
+                    user with an error message
+                    instructing them to use the HTTPS protocol for accessing
+                    the requested resource. Other
+                    containers will actually redirect the request using the
+                    HTTPS protocol, but then continue
+                    using the HTTPS protocol for all subsequent requests, even
+                    those for resources with a
+                    transport-guarantee specification of NONE.
+                </p>
+</div>
+<a name="sslext"></a><div class="section"><h3><a name="The_sslext_Extension"></a>The sslext Extension</h3>
+<p>
+                    An extension to version 1.1, named sslext, helps solve many
+                    of the HTTP/HTTPS switching issues. It extends the ActionConfig class,
+                    RequestProcessor, and Plugin classes to
+                    define a framework where developers may specify the
+                    transmission protocol behavior for
+                    Struts applications. Within the Struts configuration file,
+                    developers specify which action
+                    requests require HTTPS transmission and which should use
+                    HTTP. Developers can also
+                    specify whether to redirect &quot;improperly-protocoled&quot;
+                    requests to the correct protocol.
+                </p>
+<p>
+                    In addition to these extensions, the &lt;html:link&gt; and
+                    the &lt;html:form&gt; tags have been
+                    extended. In these extensions, the Struts actions
+                    specified in either of these tags are
+                    analyzed to determine the protocol that should be used in
+                    requesting that action. The
+                    HTML generated by these tags will specify the proper
+                    protocol. An additional custom
+                    tag is defined for allowing users to specify the
+                    transmission protocol for an individual
+                    JSP. This is most often used for form-based authentication
+                    pages.
+                </p>
+<p>
+                    The sslext library may be obtained from
+                    <a href="http://sslext.sourceforge.net" class="externalLink">
+                        http://sslext.sourceforge.net</a></p>
+</div>
+<a name="legacy"></a><div class="section"><h3><a name="Legacy_Browser_Issue"></a>Legacy Browser Issue</h3>
+<p>
+                    One additional complication faced by developers of web
+                    applications is that some
+                    browsers (e.g. pre-6.0 versions of Netscape Navigator)
+                    will treat requests to different
+                    protocols and ports on the same server as requests to
+                    different domains. This causes
+                    these browsers to initiate a new session each time a
+                    different protocol or port is specified
+                    in a request. This problem can only be solved at the
+                    container level. Some containers
+                    have a &quot;session domain&quot; or &quot;cookie domain&quot; configuration
+                    parameter to allow the session
+                    to be shared across different servers in the same domain.
+                    As an example, the Weblogic
+                    Server has a &quot;CookieDomain&quot; property configured in its
+                    weblogic.xml deployment
+                    descriptor. Thankfully, the effects of this problem are
+                    diminishing as people upgrade
+                    their browsers to the current versions.
+                </p>
+</div>
+<a name="containers"></a><div class="section"><h3><a name="Configuring_Containers_for_SSL"></a>Configuring Containers for SSL</h3>
+<p>
+                    The procedure for configuring SSL for a container will be
+                    specific to that container. The
+                    procedure for enabling SSL for Tomcat can be found
+                    <a href="http://tomcat.apache.org/tomcat-5.5-doc/ssl-howto.html" class="externalLink">
+                        here</a>
+                    .
+                </p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

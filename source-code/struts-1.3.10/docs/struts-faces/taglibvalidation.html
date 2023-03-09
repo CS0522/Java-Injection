@@ -1,0 +1,866 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts Faces - Tag library validation report.</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="" id="bannerRight">
+    
+                                            <img src="images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="1.x/">Struts 1</a>
+            |
+                <a href="2.x/">Struts 2</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts Faces</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Quick Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="apidocs/index.html">Javadoc</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../index.html">Struts 1</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="checkstyle.html">Checkstyle</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="cpd.html">CPD Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDocs</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="pmd.html">PMD Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="xref/index.html">Source Xref</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="surefire-report.html">Surefire Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="tlddoc/index.html">Taglibdoc documentation</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Tag library validation</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="tagreference.html">Tag reference</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="testapidocs/index.html">Test JavaDocs</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="xref-test/index.html">Test Source Xref</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Tag library validation report</h2>
+<p>Tag library validation report automatically generated by the Maven taglib plugin</p>
+<p>This report contains a basic validation of tag handler classes for the following tag libraries:</p>
+<ul><li><a href="#struts-faces.tld">Struts-Faces (struts-faces.tld)</a> - uri: http://struts.apache.org/tags-faces</li>
+</ul>
+</div>
+<a name="struts-faces.tld"></a><div class="section"><h2>null struts-faces.tld</h2>
+<div class="section"><h3>&lt;Struts-Faces:base&gt;</h3>
+<table class="bodyTable"><tr class="a"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.BaseTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>target</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:commandLink&gt;</h3>
+<table class="bodyTable"><tr class="b"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.CommandLinkTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="b"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>accesskey</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>action</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>actionListener</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>charset</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>dir</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>hreflang</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>immediate</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>lang</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onblur</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onclick</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>ondblclick</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onfocus</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onkeydown</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onkeypress</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onkeyup</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onmousedown</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onmousemove</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onmouseout</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onmouseover</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onmouseup</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rel</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rev</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>style</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>styleClass</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>tabindex</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>target</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>title</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>type</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>value</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:errors&gt;</h3>
+<table class="bodyTable"><tr class="b"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.ErrorsTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="b"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>bundle</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>property</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:form&gt;</h3>
+<table class="bodyTable"><tr class="b"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.FormTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="b"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>action</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>enctype</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>focus</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>focusIndex</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onreset</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>onsubmit</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>style</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>styleClass</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>target</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:html&gt;</h3>
+<table class="bodyTable"><tr class="a"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.HtmlTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>locale</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>xhtml</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:javascript&gt;</h3>
+<table class="bodyTable"><tr class="a"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="b"><td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.JavascriptValidatorTag
+    </td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:loadMessages&gt;</h3>
+<table class="bodyTable"><tr class="a"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>org.apache.struts.faces.taglib.LoadMessagesTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>messages</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>var</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:message&gt;</h3>
+<table class="bodyTable"><tr class="b"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.MessageTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="b"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>bundle</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>filter</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>key</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>style</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>styleClass</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>value</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:stylesheet&gt;</h3>
+<table class="bodyTable"><tr class="b"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.StylesheetTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="b"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>path</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>&lt;Struts-Faces:write&gt;</h3>
+<table class="bodyTable"><tr class="a"><th>found</th>
+<th>loadable</th>
+<th>extends TagSupport/TagExtraInfo</th>
+<th>class</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td><img src="images/icon_error_sml.gif" alt="error" /></td>
+<td>org.apache.struts.faces.taglib.WriteTag</td>
+</tr>
+</table>
+<table class="bodyTable"><tr class="a"><th>-</th>
+<th>attribute name</th>
+<th>tld declares</th>
+<th>tag declares</th>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>binding</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>filter</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>id</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>rendered</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>style</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>styleClass</td>
+<td></td>
+<td>String</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" alt="success" /></td>
+<td>value</td>
+<td></td>
+<td>String</td>
+</tr>
+</table>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

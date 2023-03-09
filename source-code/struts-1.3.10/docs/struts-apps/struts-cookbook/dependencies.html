@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts Apps - Project Dependencies</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="../../" id="bannerRight">
+    
+                                            <img src="../../images/struts.gif" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2008-11-29
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../2.x/">Struts 2</a>
+            |
+                <a href="../1.x/">Struts 1</a>
+            |
+                <a href="http://www.apache.org" class="externalLink">Apache</a>
+            |
+                <a href="../../1.x/">Struts 1</a>
+            |
+                <a href="../../2.x/">Struts 2</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts Apps</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+          </ul>
+              <h5>Components</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../struts-apps/index.html">Struts Apps</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-el/index.html">Struts EL</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-extras/index.html">Struts Extras</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-faces/index.html">Struts Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-scripting/index.html">Struts Scripting</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-taglib/index.html">Struts Taglib</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../struts-tiles/index.html">Struts Tiles</a>
+          </li>
+          </ul>
+              <h5>Quick Links</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../">Apache Struts Home</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../index.html">Struts 1</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-info.html">Project Information</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="index.html">About</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="integration.html">Continuous Integration</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="dependency-convergence.html">Dependency Convergence</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="issue-tracking.html">Issue Tracking</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="mail-lists.html">Mailing Lists</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugin-management.html">Plugin Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="license.html">Project License</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugins.html">Project Plugins</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="project-summary.html">Project Summary</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="team-list.html">Project Team</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="source-repository.html">Source Repository</a>
+          </li>
+              </ul>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>org.apache.struts</td>
+<td><a href="http://struts.apache.org" class="externalLink">struts-core</a></td>
+<td>1.3.10</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.apache.struts</td>
+<td><a href="http://struts.apache.org" class="externalLink">struts-taglib</a></td>
+<td>1.3.10</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>provided</h3>
+<p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>javax.servlet</td>
+<td>servlet-api</td>
+<td>2.3</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>antlr</td>
+<td>antlr</td>
+<td>2.7.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-beanutils</td>
+<td><a href="http://commons.apache.org/beanutils/" class="externalLink">commons-beanutils</a></td>
+<td>1.8.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-chain</td>
+<td><a href="http://commons.apache.org/chain/" class="externalLink">commons-chain</a></td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-digester</td>
+<td><a href="http://jakarta.apache.org/commons/digester/" class="externalLink">commons-digester</a></td>
+<td>1.8</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-logging</td>
+<td><a href="http://jakarta.apache.org/commons/logging/" class="externalLink">commons-logging</a></td>
+<td>1.0.4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-validator</td>
+<td>commons-validator</td>
+<td>1.3.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>oro</td>
+<td>oro</td>
+<td>2.0.8</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script>
+<div class="section"><h3>Dependency Tree</h3>
+<ul><li>org.apache.struts:struts-cookbook:war:1.3.10 <img id="_543001450" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_481459712', '_543001450' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_481459712" style="display:none"><table class="bodyTable"><tr class="b"><th>Struts Apps - Cookbook</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Apache Struts</p>
+<p><b>URL: </b><a href="http://struts.apache.org/struts-apps/struts-cookbook" class="externalLink">http://struts.apache.org/struts-apps/struts-cookbook</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.apache.struts:struts-core:jar:1.3.10 (compile) <img id="_616787210" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1404442113', '_616787210' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1404442113" style="display:none"><table class="bodyTable"><tr class="b"><th>Struts Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Apache Struts</p>
+<p><b>URL: </b><a href="http://struts.apache.org" class="externalLink">http://struts.apache.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>antlr:antlr:jar:2.7.2 (compile) <img id="_1503145773" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1940789879', '_1503145773' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1940789879" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - antlr:antlr:jar:2.7.2</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-beanutils:commons-beanutils:jar:1.8.0 (compile) <img id="_1609616617" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_570918093', '_1609616617' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_570918093" style="display:none"><table class="bodyTable"><tr class="b"><th>Commons BeanUtils</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.</p>
+<p><b>URL: </b><a href="http://commons.apache.org/beanutils/" class="externalLink">http://commons.apache.org/beanutils/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-chain:commons-chain:jar:1.2 (compile) <img id="_1338244394" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1053366538', '_1338244394' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1053366538" style="display:none"><table class="bodyTable"><tr class="b"><th>Commons Chain</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>An implementation of the GoF Chain of Responsibility pattern</p>
+<p><b>URL: </b><a href="http://commons.apache.org/chain/" class="externalLink">http://commons.apache.org/chain/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-digester:commons-digester:jar:1.8 (compile) <img id="_954768144" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_391697604', '_954768144' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_391697604" style="display:none"><table class="bodyTable"><tr class="b"><th>Digester</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The Digester package lets you configure an XML-&gt;Java object mapping module
+    which triggers certain actions called rules whenever a particular 
+    pattern of nested XML elements is recognized.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/commons/digester/" class="externalLink">http://jakarta.apache.org/commons/digester/</a></p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-logging:commons-logging:jar:1.0.4 (compile) <img id="_889829233" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_782865110', '_889829233' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_782865110" style="display:none"><table class="bodyTable"><tr class="b"><th>Logging</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/commons/logging/" class="externalLink">http://jakarta.apache.org/commons/logging/</a></p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-validator:commons-validator:jar:1.3.1 (compile) <img id="_1330619509" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_386280190', '_1330619509' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_386280190" style="display:none"><table class="bodyTable"><tr class="b"><th>Validator</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Commons Validator provides the building blocks for both client side validation
+    and server side data validation. It may be used standalone or with a framework like
+    Struts.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-logging:commons-logging:jar:1.0.4 (compile) <img id="_1531831384" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1272894526', '_1531831384' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1272894526" style="display:none"><table class="bodyTable"><tr class="b"><th>Logging</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/commons/logging/" class="externalLink">http://jakarta.apache.org/commons/logging/</a></p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>oro:oro:jar:2.0.8 (compile) <img id="_125439609" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_888445439', '_125439609' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_888445439" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - oro:oro:jar:2.0.8</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>javax.servlet:servlet-api:jar:2.3 (provided) <img id="_1319205262" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_127953119', '_1319205262' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_127953119" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.servlet:servlet-api:jar:2.3</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.apache.struts:struts-taglib:jar:1.3.10 (compile) <img id="_2086385224" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_283750828', '_2086385224' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_283750828" style="display:none"><table class="bodyTable"><tr class="b"><th>Struts Taglib</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Apache Struts</p>
+<p><b>URL: </b><a href="http://struts.apache.org" class="externalLink">http://struts.apache.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.apache.struts:struts-core:jar:1.3.10 (compile) <img id="_2010456346" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_340777560', '_2010456346' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_340777560" style="display:none"><table class="bodyTable"><tr class="b"><th>Struts Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Apache Struts</p>
+<p><b>URL: </b><a href="http://struts.apache.org" class="externalLink">http://struts.apache.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2>Licenses</h2>
+<p><b>Unknown: </b>Unnamed - antlr:antlr:jar:2.7.2, Unnamed - javax.servlet:servlet-api:jar:2.3, Unnamed - oro:oro:jar:2.0.8</p>
+<p><b>The Apache Software License, Version 2.0: </b>Commons BeanUtils, Commons Chain, Digester, Logging, Struts Apps - Cookbook, Struts Core, Struts Taglib, Validator</p>
+</div>
+<div class="section"><h2>Dependency File Details</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Filename</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="left">antlr-2.7.2.jar</td>
+<td align="right">349.88 kB</td>
+<td align="right">195</td>
+<td align="right">193</td>
+<td align="right">8</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-beanutils-1.8.0.jar</td>
+<td align="right">225.90 kB</td>
+<td align="right">155</td>
+<td align="right">137</td>
+<td align="right">6</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-chain-1.2.jar</td>
+<td align="right">89.55 kB</td>
+<td align="right">81</td>
+<td align="right">61</td>
+<td align="right">8</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-digester-1.8.jar</td>
+<td align="right">140.24 kB</td>
+<td align="right">114</td>
+<td align="right">100</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-logging-1.0.4.jar</td>
+<td align="right">37.12 kB</td>
+<td align="right">29</td>
+<td align="right">18</td>
+<td align="right">2</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-validator-1.3.1.jar</td>
+<td align="right">135.70 kB</td>
+<td align="right">93</td>
+<td align="right">46</td>
+<td align="right">3</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">servlet-api-2.3.jar</td>
+<td align="right">76.15 kB</td>
+<td align="right">83</td>
+<td align="right">63</td>
+<td align="right">4</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">struts-core-1.3.10.jar</td>
+<td align="right">321.72 kB</td>
+<td align="right">192</td>
+<td align="right">150</td>
+<td align="right">15</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">struts-taglib-1.3.10.jar</td>
+<td align="right">245.61 kB</td>
+<td align="right">158</td>
+<td align="right">125</td>
+<td align="right">8</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">oro-2.0.8.jar</td>
+<td align="right">63.73 kB</td>
+<td align="right">74</td>
+<td align="right">62</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">release</td>
+</tr>
+<tr class="a"><th align="left">Total</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="b"><td align="right">10</td>
+<td align="right">1.65 MB</td>
+<td align="right">1,174</td>
+<td align="right">955</td>
+<td align="right">66</td>
+<td align="center">1.4</td>
+<td align="right">9</td>
+</tr>
+<tr class="a"><td align="right">compile: 9</td>
+<td align="right">compile: 1.57 MB</td>
+<td align="right">compile: 1,091</td>
+<td align="right">compile: 892</td>
+<td align="right">compile: 62</td>
+<td align="center">-</td>
+<td align="right">compile: 8</td>
+</tr>
+<tr class="b"><td align="right">provided: 1</td>
+<td align="right">provided: 76.15 kB</td>
+<td align="right">provided: 83</td>
+<td align="right">provided: 63</td>
+<td align="right">provided: 4</td>
+<td align="center">-</td>
+<td align="right">provided: 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Repo ID</th>
+<th align="left">URL</th>
+<th align="center">Release</th>
+<th align="center">Snapshot</th>
+</tr>
+<tr class="b"><td align="left">apache.snapshots</td>
+<td align="left"><a href="http://people.apache.org/maven-snapshot-repository" class="externalLink">http://people.apache.org/maven-snapshot-repository</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">central</td>
+<td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<p>Repository locations for each of the Dependencies.</p>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Artifact</th>
+<th align="center">apache.snapshots</th>
+<th align="center">central</th>
+</tr>
+<tr class="a"><td align="left">antlr:antlr:jar:2.7.2</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/antlr/antlr/2.7.2/antlr-2.7.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-beanutils:commons-beanutils:jar:1.8.0</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">commons-chain:commons-chain:jar:1.2</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-chain/commons-chain/1.2/commons-chain-1.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-digester:commons-digester:jar:1.8</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">commons-logging:commons-logging:jar:1.0.4</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">commons-validator:commons-validator:jar:1.3.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">javax.servlet:servlet-api:jar:2.3</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.apache.struts:struts-core:jar:1.3.10</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.apache.struts:struts-taglib:jar:1.3.10</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">oro:oro:jar:2.0.8</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><th align="left">Total</th>
+<th align="center">apache.snapshots</th>
+<th align="center">central</th>
+</tr>
+<tr class="b"><td align="left">10 (compile: 9, provided: 1)</td>
+<td align="center">0</td>
+<td align="center">8</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2008
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.2" timestamp="2008-11-29T00:43:54.031">
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\action\ActionForm.java">
+<violation beginline="154" endline="154" begincolumn="13" endcolumn="13" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionForm" method="reset" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\action\ActionMapping.java">
+<violation beginline="76" endline="78" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionMapping" method="findForward" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\action\ActionServlet.java">
+<violation beginline="57" endline="57" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.action" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.xml.sax.InputSource'
+</violation>
+<violation beginline="75" endline="75" begincolumn="1" endcolumn="30" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.action" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.net.URLConnection'
+</violation>
+<violation beginline="317" endline="317" begincolumn="13" endcolumn="13" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionServlet" method="destroy" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="854" endline="854" begincolumn="21" endcolumn="21" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionServlet" method="initModulePlugIns" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="1000" endline="1026" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionServlet" method="processFormBeanConfigClass" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="1148" endline="1174" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionServlet" method="processForwardConfigClass" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="1295" endline="1321" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionServlet" method="processExceptionConfigClass" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="1456" endline="1490" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="ActionServlet" method="processActionConfigClass" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\action\RequestProcessor.java">
+<violation beginline="455" endline="457" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="RequestProcessor" method="processCachedMessages" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="464" endline="466" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.action" class="RequestProcessor" method="processCachedMessages" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\chain\commands\servlet\ExceptionHandler.java">
+<violation beginline="47" endline="47" begincolumn="30" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.chain.commands.servlet" class="ExceptionHandler" variable="log" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'log'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\chain\commands\servlet\PopulateActionForm.java">
+<violation beginline="42" endline="42" begincolumn="30" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.chain.commands.servlet" class="PopulateActionForm" variable="log" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'log'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\chain\commands\servlet\SelectLocale.java">
+<violation beginline="41" endline="41" begincolumn="30" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.chain.commands.servlet" class="SelectLocale" variable="log" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'log'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\chain\commands\servlet\ValidateActionForm.java">
+<violation beginline="64" endline="70" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.chain.commands.servlet" class="ValidateActionForm" method="validate" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\chain\contexts\WebActionContext.java">
+<violation beginline="53" endline="55" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Basic Rules" package="org.apache.struts.chain.contexts" class="WebActionContext" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\config\impl\ModuleConfigImpl.java">
+<violation beginline="297" endline="307" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.config.impl" class="ModuleConfigImpl" method="addActionConfig" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\mock\MockActionServlet.java">
+<violation beginline="62" endline="62" begincolumn="9" endcolumn="9" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.mock" class="MockActionServlet" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="105" endline="108" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Basic Rules" package="org.apache.struts.mock" class="MockActionServlet" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\mock\MockFormBean.java">
+<violation beginline="94" endline="94" begincolumn="13" endcolumn="16" rule="UnconditionalIfStatement" ruleset="Basic Rules" package="org.apache.struts.mock" class="MockFormBean" method="getThrowIllegalAccessException" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnconditionalIfStatement" priority="3">
+Do not use if statements that are always true or always false
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\upload\CommonsMultipartRequestHandler.java">
+<violation beginline="413" endline="415" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.upload" class="CommonsMultipartRequestHandler" method="addTextParameter" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\util\ImageButtonBean.java">
+<violation beginline="55" endline="55" begincolumn="9" endcolumn="9" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.util" class="ImageButtonBean" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\util\PropertyMessageResources.java">
+<violation beginline="244" endline="250" begincolumn="32" endcolumn="9" rule="EmptyIfStmt" ruleset="Basic Rules" package="org.apache.struts.util" class="PropertyMessageResources" method="getMessage" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+<violation beginline="397" endline="397" begincolumn="16" endcolumn="25" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.util" class="PropertyMessageResources" method="findMessage" variable="messageKey" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'messageKey'.
+</violation>
+<violation beginline="448" endline="450" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.util" class="PropertyMessageResources" method="findMessage" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\util\RequestUtils.java">
+<violation beginline="887" endline="887" begincolumn="25" endcolumn="25" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.util" class="RequestUtils" method="forwardURL" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\util\TokenProcessor.java">
+<violation beginline="204" endline="204" begincolumn="43" endcolumn="51" rule="UnnecessaryConversionTemporary" ruleset="Basic Rules" package="org.apache.struts.util" class="TokenProcessor" method="generateToken" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryConversionTemporary" priority="3">
+Avoid unnecessary temporaries when converting primitives to Strings
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\validator\Resources.java">
+<violation beginline="296" endline="296" begincolumn="16" endcolumn="24" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator" class="Resources" method="getMessage" variable="msgBundle" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'msgBundle'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\validator\ValidatorPlugIn.java">
+<violation beginline="79" endline="79" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.apache.struts.validator" class="ValidatorPlugIn" variable="config" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'config'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\validator\validwhen\ValidWhenLexer.java">
+<violation beginline="26" endline="26" begincolumn="1" endcolumn="23" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Stack'
+</violation>
+<violation beginline="27" endline="27" begincolumn="1" endcolumn="56" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.commons.validator.util.ValidatorUtils'
+</violation>
+<violation beginline="36" endline="36" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.ANTLRException'
+</violation>
+<violation beginline="39" endline="39" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.CharScanner'
+</violation>
+<violation beginline="44" endline="44" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.CommonToken'
+</violation>
+<violation beginline="47" endline="47" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.MismatchedCharException'
+</violation>
+<violation beginline="52" endline="52" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.SemanticException'
+</violation>
+<violation beginline="76" endline="76" begincolumn="15" endcolumn="25" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="nextToken" variable="theRetToken" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'theRetToken'.
+</violation>
+<violation beginline="79" endline="79" begincolumn="23" endcolumn="28" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="nextToken" variable="_token" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_token'.
+</violation>
+<violation beginline="213" endline="213" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mWS" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="259" endline="259" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mDECIMAL_LITERAL" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="305" endline="305" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mHEX_LITERAL" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="345" endline="345" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mOCTAL_LITERAL" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="370" endline="370" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mSTRING_LITERAL" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="432" endline="432" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mLBRACKET" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="445" endline="445" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mRBRACKET" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="458" endline="458" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mLPAREN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="471" endline="471" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mRPAREN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="484" endline="484" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mTHIS" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="497" endline="497" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mIDENTIFIER" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="579" endline="579" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mEQUALSIGN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="593" endline="593" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mNOTEQUALSIGN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="607" endline="607" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mLESSTHANSIGN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="620" endline="620" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mGREATERTHANSIGN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="633" endline="633" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mLESSEQUALSIGN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+<violation beginline="647" endline="647" begincolumn="21" endcolumn="30" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenLexer" method="mGREATEREQUALSIGN" variable="_saveIndex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as '_saveIndex'.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\validator\validwhen\ValidWhenParser.java">
+<violation beginline="32" endline="32" begincolumn="1" endcolumn="36" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.TokenStreamIOException'
+</violation>
+<violation beginline="33" endline="33" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.ANTLRException'
+</violation>
+<violation beginline="34" endline="34" begincolumn="1" endcolumn="23" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.LLkParser'
+</violation>
+<violation beginline="39" endline="39" begincolumn="1" endcolumn="38" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.MismatchedTokenException'
+</violation>
+<violation beginline="40" endline="40" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'antlr.SemanticException'
+</violation>
+<violation beginline="72" endline="74" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="evaluateComparison" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="77" endline="79" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="evaluateComparison" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="133" endline="133" begincolumn="50" endcolumn="50" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="evaluateComparison" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="133" endline="133" begincolumn="15" endcolumn="49" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="evaluateComparison" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="406" endline="406" begincolumn="31" endcolumn="75" rule="BooleanInstantiation" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="comparisonExpression" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#BooleanInstantiation" priority="2">
+Avoid instantiating Boolean objects; reference Boolean.TRUE or Boolean.FALSE or call Boolean.valueOf() instead.
+</violation>
+<violation beginline="421" endline="421" begincolumn="31" endcolumn="81" rule="BooleanInstantiation" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="joinedExpression" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#BooleanInstantiation" priority="2">
+Avoid instantiating Boolean objects; reference Boolean.TRUE or Boolean.FALSE or call Boolean.valueOf() instead.
+</violation>
+<violation beginline="423" endline="423" begincolumn="31" endcolumn="81" rule="BooleanInstantiation" ruleset="Basic Rules" package="org.apache.struts.validator.validwhen" class="ValidWhenParser" method="joinedExpression" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#BooleanInstantiation" priority="2">
+Avoid instantiating Boolean objects; reference Boolean.TRUE or Boolean.FALSE or call Boolean.valueOf() instead.
+</violation>
+</file>
+<file name="C:\Workspace\STRUTS_1_3_BRANCH\core\src\main\java\org\apache\struts\validator\validwhen\ValidWhenParserTokenTypes.java">
+<violation beginline="26" endline="26" begincolumn="1" endcolumn="23" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Stack'
+</violation>
+<violation beginline="27" endline="27" begincolumn="1" endcolumn="56" rule="UnusedImports" ruleset="Import Statement Rules" package="org.apache.struts.validator.validwhen" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.apache.commons.validator.util.ValidatorUtils'
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Struts Apps - Examples - Checkstyle report</title>
+    <link>http://struts.apache.org/struts-apps/struts-examples</link>
+    <description>Struts Apps - Examples - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2000 - 2008 Apache Software Foundation</copyright>
+    <item>
+      <title>File: 30,
+             Errors: 367,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://struts.apache.org/struts-apps/struts-examples/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.EventDispatchActionExample.java">org/apache/struts/webapp/dispatch/EventDispatchActionExample.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.TypeForm.java">org/apache/struts/webapp/validator/TypeForm.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  72
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.MappingDispatchExampleAction.java">org/apache/struts/webapp/dispatch/MappingDispatchExampleAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.upload.UploadForm.java">org/apache/struts/webapp/upload/UploadForm.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  30
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.LookupDispatchExampleAction.java">org/apache/struts/webapp/dispatch/LookupDispatchExampleAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.examples.CustomFormBean.java">org/apache/struts/webapp/examples/CustomFormBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.examples.CustomActionForward.java">org/apache/struts/webapp/examples/CustomActionForward.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.EventActionDispatcherExample.java">org/apache/struts/webapp/dispatch/EventActionDispatcherExample.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.exercise.TestBean.java">org/apache/struts/webapp/exercise/TestBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  92
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.RegistrationAction.java">org/apache/struts/webapp/validator/RegistrationAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.ActionDispatcherExample.java">org/apache/struts/webapp/dispatch/ActionDispatcherExample.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.upload.UploadAction.java">org/apache/struts/webapp/upload/UploadAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.EditTypeAction.java">org/apache/struts/webapp/validator/EditTypeAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.RegistrationForm.java">org/apache/struts/webapp/validator/RegistrationForm.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.examples.package.html">org/apache/struts/webapp/examples/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.exercise.package.html">org/apache/struts/webapp/exercise/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.examples.CustomActionMapping.java">org/apache/struts/webapp/examples/CustomActionMapping.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.ShowFileAction.java">org/apache/struts/webapp/validator/ShowFileAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.exercise.SuccessAction.java">org/apache/struts/webapp/exercise/SuccessAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.examples.CustomActionForm.java">org/apache/struts/webapp/examples/CustomActionForm.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.TypeAction.java">org/apache/struts/webapp/validator/TypeAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.package.html">org/apache/struts/webapp/validator/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.CityStateZip.java">org/apache/struts/webapp/validator/CityStateZip.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.MultiRegistrationAction.java">org/apache/struts/webapp/validator/MultiRegistrationAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.package.html">org/apache/struts/webapp/dispatch/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.exercise.HtmlSettersAction.java">org/apache/struts/webapp/exercise/HtmlSettersAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.validator.LocaleAction.java">org/apache/struts/webapp/validator/LocaleAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.dispatch.DispatchExampleAction.java">org/apache/struts/webapp/dispatch/DispatchExampleAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.upload.package.html">org/apache/struts/webapp/upload/package.html</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://struts.apache.org/struts-apps/struts-examples/checkstyle.html#org.apache.struts.webapp.exercise.ImageAction.java">org/apache/struts/webapp/exercise/ImageAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
