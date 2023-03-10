@@ -3,9 +3,11 @@
     - [安装 Docker](#安装-docker)
     - [安装 Vulhub](#安装-vulhub)
     - [启动、测试、移除](#启动测试移除)
-  - [OGNL \& Struts2](#ognl--struts2)
+  - [OGNL](#ognl)
     - [OGNL 基本知识](#ognl-基本知识)
     - [OGNL 基本使用](#ognl-基本使用)
+    - [OGNL 语法规范](#ognl-语法规范)
+  - [Struts](#struts)
     - [Struts2 - OGNL](#struts2---ognl)
     - [Struts2 ValueStack 操作](#struts2-valuestack-操作)
   - [Struts 漏洞学习](#struts-漏洞学习)
@@ -27,6 +29,7 @@
 [48_10]: https://blog.csdn.net/csh624366188/article/details/7550606
 [49_11]: https://blog.csdn.net/csh624366188/article/details/7552950
 [cnblog_shentoutest]: https://blog.csdn.net/weixin_53972936/article/details/127590995
+[yufaguifan]: https://juejin.cn/post/6901445935713714189
 
 # Java 表达式注入
 
@@ -110,7 +113,7 @@
   docker-compose down
   ```
 
-## OGNL & Struts2
+## OGNL
 
 * 参考 [Ognl 表达式的基本使用方法][github.io]
 * 参考 [Ognl 表达式基本原理和使用方法][cnblog]
@@ -274,6 +277,14 @@
 
 * 创建对象  
   ![创建对象](imgs/007.png)
+
+
+### OGNL 语法规范
+
+* 参考 [OGNL 语法规范][yufaguifan]
+
+
+## Struts
 
 ### Struts2 - OGNL
 
@@ -468,51 +479,58 @@
 
   工作流程：
 
-  * 初始化：struts 框架的总控制器 ActionServlet 在 web.xml 中配置成自动启动的 Servlet，读取配置文件(struts-config.xml)的配置信息，初始化相应的对象 (面向对象思想)
-  * 发送请求：用户提交表单或通过 URL 向 WEB 服务器提交请求
-  * form 填充：ActionServlet 在用户提交请求时将数据放到对应的 form 对象中的成员变量中
-  * 派发请求：控制器根据配置信息对象 ActionConfig 将请求派发到具体的 Action，对应的 formBean 一并传给这个 Action 中的 excute() 方法
-  * 处理业务：Action 一般只包含一个 excute() 方法，它负责执行相应的业务逻辑(调用其它的业务模块)。完毕后返回一个 ActionForward 对象。服务器通过 ActionForward 对象进行转发工作
-  * 返回响应：Action 将业务处理的不同结果返回一个目标响应对象给总控制器
-  * 查找响应：总控制器根据 Action 处理业务返回的目标响应对象，找到对应的资源对象，一般情况下为 jsp 页面
-  * 响应用户：目标响应对象将结果传递给资源对象，将结果展现给用户
+* 初始化：struts 框架的总控制器 ActionServlet 在 web.xml 中配置成自动启动的 Servlet，读取配置文件(struts-config.xml)的配置信息，初始化相应的对象 (面向对象思想)
+* 发送请求：用户提交表单或通过 URL 向 WEB 服务器提交请求
+* form 填充：ActionServlet 在用户提交请求时将数据放到对应的 form 对象中的成员变量中
+* 派发请求：控制器根据配置信息对象 ActionConfig 将请求派发到具体的 Action，对应的 formBean 一并传给这个 Action 中的 excute() 方法
+* 处理业务：Action 一般只包含一个 excute() 方法，它负责执行相应的业务逻辑(调用其它的业务模块)。完毕后返回一个 ActionForward 对象。服务器通过 ActionForward 对象进行转发工作
+* 返回响应：Action 将业务处理的不同结果返回一个目标响应对象给总控制器
+* 查找响应：总控制器根据 Action 处理业务返回的目标响应对象，找到对应的资源对象，一般情况下为 jsp 页面
+* 响应用户：目标响应对象将结果传递给资源对象，将结果展现给用户
 
 Struts 核心：
 
-  * `Action`, `ActionForm`, `ActionForward`
-    - `ActionForm`: 配置 ActionForm，必须包含 ActionForm 类。Struts 要求ActionForm 必须继承 Struts 的基类: org.apache.struts.action.ActionForm。ActionForm 的属性必须与 JSP 页面的表单域相同。
-    - `Action`: 负责管理与之关联的 ActionForm。通过 ActionForm，可使 Action 无须从 HTTP 请求中解析参数。因为所有的参数都被封装在 ActionForm 中。必须重写 `public ActionForward execute(mapping, form, req, res)` 核心方法，该方法 form 将表单的请求参数封装成值对象。
-    - `ActionForward`: 封装转发路径，也就是完成页面的跳转和转向。
+* `Action`, `ActionForm`, `ActionForward`
   
-  * 实际的过程是: ActionServlet 拦截到用户请求后，根据用户的请求，在配置文件中查找对应的 Action，Action 的 name 属性指定了用于封装请求参数的 ActionForm; 然后 ActionServlet 将创建默认的 ActionForm 实例，并调用对应的 setter 方法完成 ActionForm 的初始化。 
-  
-  * Action 类的 `execute()` 方法的參数和返回值：
-    - ActionMapping：包括了这个 Action 的配置信息，和 strutsconfig.xml 文件里的`<action>` 元素相应
-    - ActionForm：包括了用户的表单数据。当 Struts 框架调用 execute() 方法时 ActionForm 中的数据已经通过了表单验证
-    - HttpServletRequest：当前的HTTP请求对象
-    - HttpServletResponse：当前的HTTP响应对象
-    - Action 类的 execute() 方法返回 ActionForward 对象。它包括了请求转发路径信息
+  - `ActionForm`: 配置 ActionForm，必须包含 ActionForm 类。Struts 要求ActionForm 必须继承 Struts 的基类: org.apache.struts.action.ActionForm。ActionForm 的属性必须与 JSP 页面的表单域相同。
+  - `Action`: 负责管理与之关联的 ActionForm。通过 ActionForm，可使 Action 无须从 HTTP 请求中解析参数。因为所有的参数都被封装在 ActionForm 中。必须重写 `public ActionForward execute(mapping, form, req, res)` 核心方法，该方法 form 将表单的请求参数封装成值对象。
+  - `ActionForward`: 封装转发路径，也就是完成页面的跳转和转向。
 
+* 实际的过程是: ActionServlet 拦截到用户请求后，根据用户的请求，在配置文件中查找对应的 Action，Action 的 name 属性指定了用于封装请求参数的 ActionForm; 然后 ActionServlet 将创建默认的 ActionForm 实例，并调用对应的 setter 方法完成 ActionForm 的初始化。 
+
+* Action 类的 `execute()` 方法的參数和返回值：
+  
+  - ActionMapping：包括了这个 Action 的配置信息，和 strutsconfig.xml 文件里的`<action>` 元素相应
+  - ActionForm：包括了用户的表单数据。当 Struts 框架调用 execute() 方法时 ActionForm 中的数据已经通过了表单验证
+  - HttpServletRequest：当前的HTTP请求对象
+  - HttpServletResponse：当前的HTTP响应对象
+  - Action 类的 execute() 方法返回 ActionForward 对象。它包括了请求转发路径信息
 
 ### <a id="struts2-action">struts2 Action</a>
 
   工作流程：  
-  
+
   ![struts2 process](https://img-blog.csdn.net/20180428173437858)
 
-  * 客户端初始化一个指向 Servlet 容器的请求 
-  * 这个请求经过一系列的过滤器（Filter）
-  * 接着 FilterDispatcher 被调用，FilterDispatcher 询问 ActionMapper 来决定这个请是否需要调用某个 Action 
-  * 如果 ActionMapper 决定需要调用某个 Action，FilterDispatcher 把请求的处理交给 ActionProxy 
-  * ActionProxy 通过 Configuration Manager 询问框架的配置文件，找到需要调用的 Action 类 
-  * ActionProxy 创建一个 ActionInvocation 的实例 
-  * ActionInvocation 在调用Action的过程前后，涉及到相关拦截器的调用。 
-  * Action 执行完毕，ActionInvocation 根据 struts.xml 中的配置找到对应的返回结果
+* 客户端初始化一个指向 Servlet 容器的请求 
 
+* 这个请求经过一系列的过滤器（Filter）
+
+* 接着 FilterDispatcher 被调用，FilterDispatcher 询问 ActionMapper 来决定这个请是否需要调用某个 Action 
+
+* 如果 ActionMapper 决定需要调用某个 Action，FilterDispatcher 把请求的处理交给 ActionProxy 
+
+* ActionProxy 通过 Configuration Manager 询问框架的配置文件，找到需要调用的 Action 类 
+
+* ActionProxy 创建一个 ActionInvocation 的实例 
+
+* ActionInvocation 在调用Action的过程前后，涉及到相关拦截器的调用。 
+
+* Action 执行完毕，ActionInvocation 根据 struts.xml 中的配置找到对应的返回结果
+  
   struts2 中的 Action：
 
-  * execute 方法一定要返回 String 类型的对象,每一个字符串都可以对应一个跳转的页面。(字符串是可以自己随便定义的,字符串对应哪一个跳转的页面也是自己定义,在 struts.xml 文件中定义)
-
+* execute 方法一定要返回 String 类型的对象,每一个字符串都可以对应一个跳转的页面。(字符串是可以自己随便定义的,字符串对应哪一个跳转的页面也是自己定义,在 struts.xml 文件中定义)
 
 ### S2-048
 
@@ -524,3 +542,4 @@ Struts 核心：
 
 ### S2-053
 
+[s2-053.md](./s2-053/s2-053.md)
