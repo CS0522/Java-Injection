@@ -82,7 +82,7 @@ public class Struts1Action extends DefaultActionSupport implements ScopedModelDr
         this.configuration = config;
     }
     
-    // 核心 execute 方法
+    // TODO 核心 execute 方法
     public String execute() throws Exception {
         // 获取上下文环境
         ActionContext ctx = ActionContext.getContext();
