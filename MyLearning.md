@@ -14,8 +14,11 @@
     - [struts1 Action](#struts1-action)
     - [struts2 Action](#struts2-action)
     - [S2-048](#s2-048)
-    - [S2-052](#s2-052)
     - [S2-053](#s2-053)
+    - [在 Apache Struts 中利用 OGNL 注入](#在-apache-struts-中利用-ognl-注入)
+    - [浅析 OGNL 表达式求值](#浅析-ognl-表达式求值)
+  - [Java 部分知识](#java-部分知识)
+    - [Java.io](#javaio)
 
 <!-- 23/03/04 created by Frank. 记录Java表达式注入相关知识 -->
 
@@ -536,10 +539,43 @@ Struts 核心：
 
 [s2-048.md](./s2-048/s2-048.md)
 
-### S2-052
-
-
-
 ### S2-053
 
 [s2-053.md](./s2-053/s2-053.md)
+
+
+### 在 Apache Struts 中利用 OGNL 注入
+
+[在 Apache Struts 中利用 OGNL 注入](https://www.cnblogs.com/17bdw/p/10569117.html)
+
+### 浅析 OGNL 表达式求值 
+[浅析 OGNL 表达式求值](https://xz.aliyun.com/t/111)
+* 一点点基础概念
+  * `$` 在配置文件、国际化资源文件中引用OGNL表达式
+  * `#` 访问非root对象，相当于ActionContext.getContext()
+  * `@` 访问静态属性、静态方法
+  * `%` 强制内容为OGNL表达式
+  * `context` OGNL执行上下文环境，HashMap类型
+  * `root` 根对象，ArrayList类型（默认访问对象，不需要#操作符）
+
+* 问题
+  * `(one)(two)` 模型的具体执行流程
+    * 计算`one`，结果赋值给变量`expr`
+    * 计算`two`，结果赋值给变量`source`
+    * 判断`expr`是否`Node`类型（AST树），否则以其字符串形式进行解析（ognl.Ognl.parseExpression()），结果都强制转换成`Node`类型并赋值给node
+    * 临时将`source`放入当前root中
+    * 计算node
+    * 还原root
+    * 返回结果
+  * `(one)((two)(three))` 模型的具体执行流程
+  * `denyMethodExecution` 和 `allowStaticMethodAccess` 两者使用的模型是否可以互换
+  * `z[(foo)(meh)]` 调整执行顺序的原理
+  * `(one).(two)` 和 `one,two` 模型的差异
+    * `(one).(two)`被解析成`one.two`，ASTChain 类型，以`.`字符分隔各子节点，payload 样本被分解为4个子节点（@java.lang.Runtime@getRuntime().exec('calc')被分解为@java.lang.Runtime@getRuntime()和exec('calc')）
+    * `one,two` 被解析成 `one,two`，ASTSequence 类型（遍历子节点计算，返回最后一个子节点的计算结果），以`,`字符分隔各子节点，payload 样本被正常分解为3个子节点
+
+
+## Java 部分知识
+
+### Java.io 
+[Java.io](./Java-learning/JavaIO.md)
