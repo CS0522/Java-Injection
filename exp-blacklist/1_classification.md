@@ -1,3 +1,4 @@
+<!-- Created by Frank -->
 # Classification
 
 ## 1. 类名
@@ -18,7 +19,7 @@
 ## 3. 类名 + 特定方法
 * java.lang.Class
 
-## 4. 权限语句 + 类名 + 任意方法 (@a())
+## 4. 权限语句 + 类名
 * sun.misc.Unsafe
 * java.lang.ThreadGroup
 * java.lang.Compiler
