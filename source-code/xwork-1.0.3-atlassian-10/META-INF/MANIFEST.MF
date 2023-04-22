@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Archiver-Version: Plexus Archiver
-Created-By: 1.8.0_292-b10 (AdoptOpenJDK)
-Built-By: kkithulgodage
-Build-Jdk: 11.0.15
-
