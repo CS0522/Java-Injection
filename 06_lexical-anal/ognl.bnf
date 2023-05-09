@@ -1,17 +1,17 @@
-/*
- * Copyright 2017 The authors
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+# /*
+#  * Copyright 2017 The authors
+#  * Licensed under the Apache License, Version 2.0 (the "License");
+#  * you may not use this file except in compliance with the License.
+#  * You may obtain a copy of the License at
+#  *
+#  * http://www.apache.org/licenses/LICENSE-2.0
+#  *
+#  * Unless required by applicable law or agreed to in writing, software
+#  * distributed under the License is distributed on an "AS IS" BASIS,
+#  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  * See the License for the specific language governing permissions and
+#  * limitations under the License.
+#  */
 {
   classHeader="apache2.txt"
 
@@ -137,7 +137,7 @@ expression ::= unaryExpression |
 
 private numberLiteralExpression ::= INTEGER_LITERAL | BIG_INTEGER_LITERAL | DOUBLE_LITERAL | BIG_DECIMAL_LITERAL
 private booleanLiteralExpression ::= "true" | "false"
-private textLiteralExpression ::= STRING_LITERAL | CHARACTER_LITERAL  // TODO detect missing closing quote/tick
+private textLiteralExpression ::= STRING_LITERAL | CHARACTER_LITERAL  # TODO detect missing closing quote/tick
 literalExpression ::= numberLiteralExpression |
                       textLiteralExpression |
                       booleanLiteralExpression |
@@ -238,7 +238,7 @@ indexedExpression ::= (referenceExpression | variableExpression) '[' expression 
 
 parenthesizedExpression ::= '(' expression ')' { pin=1 }
 
-// binary ----------------------------------------------------------------
+# binary ----------------------------------------------------------------
 private plusMinusOperations ::= '+' | '-'
 private divideMultiplyOperations ::=  '*' | '/' | '%'
 private booleanOperations ::= "&&" | "||" |
@@ -310,7 +310,7 @@ newArrayExpression ::= "new" fqnTypeExpression arrayConstructorExpression {
 }
 
 
-// common
+# common
 fqnTypeExpression ::= IDENTIFIER ('.' IDENTIFIER)* {
   pin(".*")=1
   mixin="com.intellij.lang.ognl.psi.impl.OgnlFqnTypeExpressionBase"
