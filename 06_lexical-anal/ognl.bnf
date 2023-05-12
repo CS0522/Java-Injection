@@ -110,6 +110,8 @@
   ]
 }
 
+# %{@java.lang.ProcessBuilder}
+
 root ::= EXPRESSION_START rootElement EXPRESSION_END { pin=1 }
 private rootRecover ::= !(EXPRESSION_END)
 private rootElement ::= expression {recoverWhile="rootRecover"}

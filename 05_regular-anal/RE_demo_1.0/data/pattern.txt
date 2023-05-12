@@ -1,0 +1,15 @@
+java.lang.ProcessBuilder 
+Java.lang.Runtime 
+Java.lang.ClassLoader 
+Java.lang.System 
+javax.script.ScriptEngineManager 
+java.lang.Shutdown 
+java.lang.Class 
+Java.io.FileDescriptor 
+Java.io.FileInputStream 
+Java.io.FileOutputStream 
+Java.io.FilePermission 
+Java.io.FileReader 
+Java.io.FileWriter 
+Java.io.File 
+ognl.OgnlContext 

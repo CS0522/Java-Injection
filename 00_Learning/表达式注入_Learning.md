@@ -17,8 +17,12 @@
     - [S2-053](#s2-053)
     - [在 Apache Struts 中利用 OGNL 注入](#在-apache-struts-中利用-ognl-注入)
     - [浅析 OGNL 表达式求值](#浅析-ognl-表达式求值)
-  - [Java 部分知识](#java-部分知识)
-    - [Java.io](#javaio)
+  - [SpEL](#spel)
+    - [SpEL 特性和功能](#spel-特性和功能)
+    - [SpEL 使用](#spel-使用)
+      - [1. 注解 `@Value`](#1-注解-value)
+      - [2. XML 配置](#2-xml-配置)
+      - [3. Expression](#3-expression)
 
 <!-- 23/03/04 created by Frank. 记录Java表达式注入相关知识 -->
 
@@ -575,7 +579,65 @@ Struts 核心：
     * `one,two` 被解析成 `one,two`，ASTSequence 类型（遍历子节点计算，返回最后一个子节点的计算结果），以`,`字符分隔各子节点，payload 样本被正常分解为3个子节点
 
 
-## Java 部分知识
 
-### Java.io 
-[Java.io](./JavaIO.md)
+<!-- 23/05/09 -->
+## SpEL
+> 参考 [SpEL 表达式总结](https://www.jianshu.com/p/e0b50053b5d3)  
+> 参考 [JAVA安全学习——表达式注入](https://www.freebuf.com/articles/web/325700.html)
+
+语法类似于传统EL, 但提供额外的功能, 最出色就是函数调用和简单字符串的模板函数
+
+### SpEL 特性和功能
+* 使用 Bean 的 ID 来引用 Bean
+* 可使用正则表达式进行匹配
+
+### SpEL 使用
+* ${ }
+  * 加载外部属性文件中的值
+* #{ }
+  * 指明 SpEL 表达式并执行
+* T(type)
+  * T(Type)操作符会返回一个object, 可以帮助获取某个类的静态方法
+  * T(全限定类名).方法名(), 即可以通过该类类型表达式来操作类
+  * eg: `#{T(java.lang.Runtime).getRuntime().exec('calc')}`
+
+#### 1. 注解 `@Value` 
+```java
+public class User {
+    @Value("${ spring.user.name }")
+    private String Username;
+    @Value("#{ systemProperties['user.region'] }")
+    private String defaultLocale;
+    //...
+}
+```
+
+#### 2. XML 配置
+```xml
+<bean id="helloWorld" class="com.demo.HelloWorld">
+    <property name="message" value="#{T(java.lang.Runtime).getRuntime().exec('calc')}"/>
+  </bean>
+```
+
+#### 3. Expression
+各种 Spring CVE 漏洞基本都是基于 Expression 形式的 SpEL 表达式注入
+```java
+// 操作类弹计算器, java.lang包下的类是可以省略包名的.
+String spel = "T(java.lang.Runtime).getRuntime().exec(\"open -a Calculator\")";
+
+ExpressionParser parser = new SpelExpressionParser();
+Expression expression = parser.parseExpression(spel);
+System.out.println(expression.getValue());
+```
+主要步骤：
+1. 创建解析器：`ExpressionParser`
+2. 解析表达式：`parseExpression`
+3. 构造上下文：准备比如变量定义等等表达式需要的上下文数据(可省)
+4. 求值：通过 `Expression` 接口的 `getValue()` 方法根据上下文获得表达式值
+
+主要接口：  
+> 符号 \* 表示 **org.springframework.expression.spel** 这个 package 名
+1. `ExpressionParser` 接口：表示解析器, 默认实现是 `*.standard` 包中的 `SpelExpressionParser` 类, 使用 `parseExpression()` 方法将字符串表达式转换为 `Expression` 对象
+2. `ParserContext` 接口：用于定义字符串表达式是不是模板, 以及模板开始与结束字符
+3. `EvaluationContext` 接口：表示上下文环境, 默认实现是 `*.support` 包中的 `StandardEvaluationContext` 类, 使用 `setRootObject()` 方法来设置根对象, 使用 `setVariable()` 方法来注册自定义变量, 使用 `registerFunction` 来注册自定义函数等
+4. `Expression` 接口：表示表达式对象, 默认实现是 `*.standard` 包中的 `SpelExpression`, 提供 `getValue()` 方法用于获取表达式值, 提供 `setValue()` 方法用于设置对象值

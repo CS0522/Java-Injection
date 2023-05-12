@@ -1,0 +1,11 @@
+#f=#context.get(a),#f.getWriter()
+{(#glassy='a').(#_memberAccess=@b@c)
+#m=#_memberAccess.getClass()
+#m.set(#_memberAccess,true)
+('#_memberAccess.excludeProperties=@java.util.Collections@EMPTY_SET')(a)(b)
+test.action
+java.lang.ProcessBuilder
+java.io.File
+javax.script.ScriptEngineManager
+java.lang.Runtime
+(%23_memberAccess%3d%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS)

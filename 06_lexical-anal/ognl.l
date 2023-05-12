@@ -170,8 +170,9 @@ greater_equal                  ">="
 and_and                        "&&"
 or_or                          "||"
 
-
+/* Part 1 end */
 %%
+/* Part 2 start */
 
 {whitespace}    {
                                         /* ignore */
@@ -554,8 +555,9 @@ or_or                          "||"
                                         SET_YYLLOC();
                                         yyterminate();
                                 }
-
+/* Part 2 end */
 %%
+/* Part 3 start */
 
 #undef yyextra
 #define yyextra  (((struct yyguts_t *) yyscanner)->yyextra_r)
