@@ -13,7 +13,7 @@ flag:
 1: injection
 0: noninjection
 """
-def reDec(sentence):
+def reDetection(sentence):
     try:
         patternFile = open(patternFilePath, 'r', encoding='utf-8')
         patternLines = patternFile.readlines()
