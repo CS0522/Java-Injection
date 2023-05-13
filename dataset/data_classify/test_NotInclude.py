@@ -1,6 +1,6 @@
-input_file1 = "dataset/data_classify/output_56.txt"
-input_file2 = "dataset/data_classify/data_6.txt"
-output_file = "dataset/data_classify/output_only6.txt"
+input_file1 = "dataset/data_classify/output_45.txt"
+input_file2 = "dataset/data_classify/data_4.txt"
+output_file = "dataset/data_classify/output_only4.txt"
 
 with open(input_file1, 'r', encoding='utf-8') as file1, open(input_file2, 'r', encoding='utf-8') as file2, open(output_file, 'w', encoding='utf-8') as output:    
     # 文件中所有语句存储在列表中

@@ -3,9 +3,9 @@ import re
 # 模式匹配文件的相对路径
 patternFilePath = "05_regular-anal/RE_demo_1.0/data/pattern.txt"
 # dataset 文件的相对路径
-datasetPath = "05_regular-anal/RE_demo_1.0/data/dataset_345.txt"
+datasetPath = "05_regular-anal/RE_demo_1.0/data/dataset_72.txt"
 # output 文件的相对路径
-outputFilePath = "05_regular-anal/RE_demo_1.0/data/output.txt"
+outputFilePath = "05_regular-anal/RE_demo_1.0/data/output_72.txt"
 
 # function
 """

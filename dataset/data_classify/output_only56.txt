@@ -1,0 +1,1 @@
+%{#_memberAccess.allowStaticMethodAccess=true,@sun.misc.Unsafe@getUnsafe()}
