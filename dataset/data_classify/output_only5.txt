@@ -9,4 +9,3 @@
 %{(#a["a"]=true).(#context["a"]=false).(@a@a())}
 %{#_memberAccess.a=true,@sun.misc.Unsafe@getUnsafe()}
 %{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.allowStaticMethodAccess=true)}
-%{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.a=true).(#context["a"]=false)}

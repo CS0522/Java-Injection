@@ -1,6 +1,6 @@
-input_file1 = "dataset_72_REresult.txt"
-input_file2 = "set1_所有被检出语句.txt"
-output_file = "set3_set1-REresult.txt"
+input_file1 = "output_56.txt"
+input_file2 = "output_temp1.txt"
+output_file = "output_456.txt"
 
 with open(input_file1, 'r', encoding='utf-8') as file1, open(input_file2, 'r', encoding='utf-8') as file2, open(output_file, 'w', encoding='utf-8') as output:    
     # 文件中所有语句存储在列表中
@@ -23,7 +23,7 @@ with open(input_file1, 'r', encoding='utf-8') as file1, open(input_file2, 'r', e
                 flag = True
                 break
         # 退出内循环后，如果 flag == False，说明没有匹配到
-        if (flag == False):
+        if (flag == True):
             print("step(row) in file2(" + input_file2 + "): " + str(out_step))
             # print("step(row) in file1(" + input_file1 + "): " + str(in_step))
             print(file2_line)

@@ -1,0 +1,11 @@
+%{#a.allowStaticMethodAccess=true,@sun.misc.Unsafe@getUnsafe()}
+%{#allowStaticMethodAccess=true,@sun.misc.Unsafe@getUnsafe()}
+%{#a=true,#a["a"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#a["a"]=true,#a["a"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#a.excludeProperties=@java.util.Collections@EMPTY_SET,@sun.misc.Unsafe@getUnsafe()}
+%{#excludeProperties=@java.util.Collections@EMPTY_SET,@sun.misc.Unsafe@getUnsafe()}
+%{@DEFAULT_MEMBER_ACCESS,@sun.misc.Unsafe@getUnsafe()}
+%{#f=#a.a().a("a"),@a@a()}
+%{(#dm=@a@DEFAULT_MEMBER_ACCESS).@sun.misc.Unsafe@getUnsafe()}
+%{(#dm=@a@a).(@sun.misc.Unsafe@getUnsafe())}
+%{#a=@java.lang.Thread@currentThread().getThreadGroup(),#b=#a,#c=#b.getParent(),#env='',#while="#b=#c,#c=#c.getParent(),(#up)(#env)",#up="(#c!=null)?(#while)(#env):1",#b.stop()}
