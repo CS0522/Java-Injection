@@ -1,6 +1,6 @@
-input_file1 = "set1_所有被检出语句.txt"
-input_file2 = "set1_所有被检出语句.txt"
-output_file = "set1_重复语句.txt"
+input_file1 = "output_45.txt"
+input_file2 = "output_45.txt"
+output_file = "output_45_重复语句.txt"
 
 with open(input_file1, 'r', encoding='utf-8') as file1, open(input_file2, 'r', encoding='utf-8') as file2, open(output_file, 'w', encoding='utf-8') as output:    
 # 将第一个文件中的所有语句存储在列表中

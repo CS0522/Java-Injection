@@ -33,9 +33,6 @@
 %{#f=getDeclaredField("a").getClass()._memberAccess,@sun.misc.Unsafe@getUnsafe()}
 %{#f=#_memberAccess.a().a("a"),@a@a()}
 %{#_memberAccess.a(),@a@a()}
-%{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.a=true).(#context["a"]=false)}
-%{#a["a"]=true,#context["a"]=false,@a@a()}
-%{#a=true,#context["a"]=false,@sun.misc.Unsafe@getUnsafe()}
 %{#_memberAccess=@DEFAULT_MEMBER_ACCESS,@sun.misc.Unsafe@getUnsafe()}
 %{#_memberAccess.excludeProperties=@EMPTY_SET,@sun.misc.Unsafe@getUnsafe()}
 %{(@sun.misc.Unsafe@getUnsafe()).(#a.allowStaticMethodAccess=true).(#context["a"]=false)}

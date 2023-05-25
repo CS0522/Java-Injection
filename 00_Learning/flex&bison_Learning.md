@@ -16,6 +16,8 @@
     - [lex 变量及函数](#lex-变量及函数)
   - [使用 Bison](#使用-bison)
     - [匹配输入](#匹配输入)
+    - [图示理解移入和归约分析](#图示理解移入和归约分析)
+    - [抽象语法树](#抽象语法树)
 
 # flex & bison Learning
 > 学习《flex & bison》小记
@@ -140,3 +142,31 @@
 
 ![](./imgs/019.png)
 > 表达式语法分析树
+
+### 图示理解移入和归约分析
+
+![](https://img-blog.csdnimg.cn/20200725105718757.png)  
+> 依照左上角的文法，遇到匹配的文法，就进行归约
+> 移入可能就可以理解为入栈
+
+### 抽象语法树
+源代码的抽象语法结构的树状表示，树上的每个节点都表示源代码中的一种结构。抽象语法树并不会表示出真实语法出现的每一个细节，比如说，嵌套括号被隐含在树的结构中，并没有以节点的形式呈现。抽象语法树并不依赖于源语言的语法。  
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9af3201eaa9847c680ef5ce7d8df2a66~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
+> 表达式: 1 + 3 * (4 - 1) + 2  
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c27d93b740704321852956f7ffec81e0~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
+
+```xml
+<!-- xml -->
+<letter>
+  <address>
+    <city>ShiChuang</city>
+  </address>
+  <people>
+    <id>12478</id>
+    <name>Nosic</name>
+  </people>
+</letter>
+```
+

