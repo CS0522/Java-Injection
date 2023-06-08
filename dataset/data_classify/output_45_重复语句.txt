@@ -1,3 +1,0 @@
-%{#a=true,#context["a"]=false,@sun.misc.Unsafe@getUnsafe()}
-%{#a["a"]=true,#context["a"]=false,@a@a()}
-%{(@sun.misc.Unsafe@getUnsafe()).(#_memberAccess.a=true).(#context["a"]=false)}
